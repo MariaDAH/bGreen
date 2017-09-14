@@ -64,6 +64,9 @@ Give trusted and verified information.
 *New Register User*
 ![alt text](img/registerUserSequenceDiagram.png "Logo Title Text 1")
 
+*Edit My Projects List*
+![alt text](img/editProjectsListSequenceDiagram.png "Logo Title Text 1")
+
 #Forms Verification
 
 #Jazmine Unit Test
