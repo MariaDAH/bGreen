@@ -6,15 +6,15 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 #UX Desing
 
 ```
-## Strategy:
-  ### Business Goals:
+1. Strategy:
+  1 Business Goals:
     . inform about nocive products on the market which are not healthy and produce
-  cancer or other diseases.
+      cancer or other diseases.
     . motivate people to be healthy and to change their habits.
     . help green and eco business to raise over other business.
     . be funny. People needs feeling happy and useful about a change.
-inform about the Earh resources and the use we do of them.
-Give trusted and verified information.
+    . inform about the Earh resources and the use we do of them.
+    . Give trusted and verified information.
   ### User Constituencies:
     . age 16 to death.
     . future (sell to schools too.)
@@ -51,11 +51,11 @@ Give trusted and verified information.
 
 *Manage eco business use case diagram*
 
-![alt text](img/BGreenPackagesDiagram.png "Logo Title Text 1")
+![alt text](img/BGreenPackagesDiagram1.png "Logo Title Text 1")
 
 *ManageEcoBusiness*
 
-![alt text](img/ManageEcoBusiness.png "Logo Title Text 1")
+![alt text](img/ManageEcoBusines.png "Logo Title Text 1")
 
 
 *Register Business Sequence Diagram*
