@@ -68,7 +68,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 ![alt text](img/registerUserSequenceDiagram.png "Logo Title Text 1")
 
 *Edit projects list sequenceDiagram*
-![alt text](img/editProjectsListSequenceDiagram.png "Logo Title Text 1")
+![alt text](img/EditProjectsListSequenceDiagram.png "Logo Title Text 1")
 
 *Select business with close locations*
 ![alt text](img/ShowCloseLocationsProjectsList.png "Logo Title Text 1")
