@@ -8,24 +8,24 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 ```
 1. Strategy
   1. Business Goals:
-     .inform about nocive products on the market which are not healthy and produce
-     .cancer or other diseases.
-     .motivate people to be healthy and to change their habits.
-     .help green and eco business to raise over other business.
-     .be funny. People needs feeling happy and useful about a change.
-     .inform about the Earh resources and the use we do of them.
-    . Give trusted and verified information.
+     . Inform about nocive products on the market which are not healthy and produce
+     . Cancer or other diseases.
+     . Motivate people to be healthy and to change their habits.
+     . Help green and eco business to raise over other business.
+     . Be funny. People needs feeling happy and useful about a change.
+     . Inform about the Earh resources and the use we do of them.
+     . Give trusted and verified information.
   2. User Constituencies:
-     .age 16 to death.
-     .future (sell to schools too.)
+     . Age 16 to death.
+     . Future (sell to schools too.)
   3. Usage Context:
-     .Everywhere during free time (desktop, laptop, tablet, mobile)
-     .People's conversations.
-     .rss feeds from twitter API(consuming twitter API, filter comments with keywords from lobbies and display them)
+     . Everywhere during free time (desktop, laptop, tablet, mobile)
+     . People's conversations.
+     . rss feeds from twitter API(consuming twitter API, filter comments with keywords from lobbies and display them)
   4. Promotion
-     .Signficative payment to register and announce a new business
-     .Facebook enterprise page: pay for advertisements
-     .Google Adworks
+     . Signficative payment to register and announce a new business
+     . Facebook enterprise page: pay for advertisements
+     . Google Adworks
 ```
 
 # Project Folder Estructure
