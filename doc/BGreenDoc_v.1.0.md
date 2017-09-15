@@ -73,9 +73,9 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 *Select business with close locations*
 ![alt text](img/ShowCloseLocationsProjectsList.png "Logo Title Text 1")
 
-#Forms Verification
+# Forms Verification
 
-*Html validation* :(https://validator.w3.org)
+Html validation :(https://validator.w3.org)
 
 # Jazmine Unit Test
 
