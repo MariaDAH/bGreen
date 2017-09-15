@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-#BGreen
-##Overview
-##Installation
-##Framework and libraries
-##Link To Documentation
-[Project document](file:///C:/Users/mixid/appdata/local/temp/78.html)
+# BGreen
+## Overview
+## Installation
+## Framework and libraries
+## Link To Documentation
 [Project document](doc/BGreenDoc_v.1.0.md)
 
 
@@ -17,4 +15,4 @@
 4. Framework and libraries
 5. Link To Documentation
 6. [Project Document](file:///C:/Users/mixid/appdata/local/temp/235.html)
->>>>>>> origin/trunk1
+
