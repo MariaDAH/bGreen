@@ -67,13 +67,15 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 *Register new user sequence diagram*
 ![alt text](img/registerUserSequenceDiagram.png "Logo Title Text 1")
 
-*Edit my projects list sequenceDiagram*
+*Edit projects list sequenceDiagram*
 ![alt text](img/editProjectsListSequenceDiagram.png "Logo Title Text 1")
 
-*Select businees project by id*
-![alt text](img/editProjectsListSequenceDiagram.png "Logo Title Text 1")
+*Select business with close locations*
+![alt text](img/ShowCloseLocationsProjectsList.png "Logo Title Text 1")
 
-# Forms Verification
+#Forms Verification
+
+*Html validation* :(https://validator.w3.org)
 
 # Jazmine Unit Test
 
