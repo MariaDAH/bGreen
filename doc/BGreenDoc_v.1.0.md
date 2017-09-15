@@ -3,11 +3,11 @@
 In this text I'll explain the analisys, desing, implentation and test of BGreenSite.
 
 
-#UX Desing
+# UX Desing
 
 ```
-1. Strategy:
-  1 Business Goals:
+# Strategy:
+  ## Business Goals:
     . inform about nocive products on the market which are not healthy and produce
       cancer or other diseases.
     . motivate people to be healthy and to change their habits.
@@ -15,16 +15,20 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
     . be funny. People needs feeling happy and useful about a change.
     . inform about the Earh resources and the use we do of them.
     . Give trusted and verified information.
-  ### User Constituencies:
+  ## User Constituencies:
     . age 16 to death.
     . future (sell to schools too.)
-  ### Usage Context:
+  ## Usage Context:
     . Everywhere during free time (desktop, laptop, tablet, mobile)
     . People's conversations.
     . rss feeds from twitter API(consuming twitter API, filter comments with keywords from lobbies and display them)
+  ## Promotion
+    . Signficative payment to register and announce a new business
+    . Facebook enterprise page: pay for advertisements
+    . Google Adworks
 ```
 
-#Project Folder Estructure
+# Project Folder Estructure
 ```
 .bGreen
    |-EcoBusinessSubsystem
@@ -47,7 +51,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
        |-GoogleMaps
 ```
 
-#Use Case Diagrams
+# Use Case Diagrams
 
 *Manage eco business use case diagram*
 
@@ -67,9 +71,9 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 *Edit My Projects List*
 ![alt text](img/editProjectsListSequenceDiagram.png "Logo Title Text 1")
 
-#Forms Verification
+# Forms Verification
 
-#Jazmine Unit Test
+# Jazmine Unit Test
 
 
 
