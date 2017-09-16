@@ -53,25 +53,27 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 
 # Balsamiq Mockups
 
+[Download balsamiq project here](balsamiq/BGreen_v1.0.zip)
+
 # Use Case Diagrams
 
-*Manage eco business packages diagram*
-![alt text](img/BGreenPackagesDiagram1.png "Logo Title Text 1")
+*BGreen packages diagram*
+![System packages](img/BGreenPackagesDiagram1.png "Logo Title Text 1")
 
-*Manage eco business use case diagram*
-![alt text](img/ManageEcoBusines.png "Logo Title Text 1")
+*BGreen use case diagram*
+![BGreen use case diagram](img/ManageEcoBusines.png "Logo Title Text 1")
 
 *Register new business sequence diagram*
-![alt text](img/RegisterBusinessSequenceDiagram.png "Logo Title Text 1")
+![Register new business](img/RegisterBusinessSequenceDiagram.png "Logo Title Text 1")
 
 *Register new user sequence diagram*
-![alt text](img/registerUserSequenceDiagram.png "Logo Title Text 1")
+![Register new user](img/registerUserSequenceDiagram.png "Logo Title Text 1")
 
-*Edit projects list sequenceDiagram*
-![alt text](img/EditProjectsListSequenceDiagram.png "Logo Title Text 1")
+*Edit projects list sequence diagram*
+![Edit projects list](img/EditProjectsListSequenceDiagram.png "Logo Title Text 1")
 
-*Select business with close locations*
-![alt text](img/ShowCloseLocationsProjectsList.png "Logo Title Text 1")
+*Select businesses with close locations*
+![Search business by location](img/ShowCloseLocationsProjectsList.png "Logo Title Text 1")
 
 # Forms Verification
 
