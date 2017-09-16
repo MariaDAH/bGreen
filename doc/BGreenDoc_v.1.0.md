@@ -53,7 +53,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 
 # Balsamiq Mockups
 
-[Download balsamiq project here](balsamiq/BGreen_v1.0.zip)
+[Download balsamiq project here](balsamiq/)
 
 # Use Case Diagrams
 
