@@ -65,7 +65,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 ![BGreen use case diagram](img/ManageEcoBusines.png "Logo Title Text 2")
 
 *Register new business sequence diagram*
-![Register new business](img/RegisterBusinessSequenceDiagram.png "Logo Title Text 3")
+![Register new business](img/RegisterBusinesSequenceDiagram.png "Logo Title Text 3")
 
 *Register new user sequence diagram*
 ![Register new user](img/RegisterUserSequenceDiagram.png "Logo Title Text 4")
