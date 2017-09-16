@@ -61,19 +61,19 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 ![System packages](img/BGreenPackagesDiagram1.png "Logo Title Text 1")
 
 *BGreen use case diagram*
-![BGreen use case diagram](img/ManageEcoBusines.png "Logo Title Text 1")
+![BGreen use case diagram](img/ManageEcoBusines.png "Logo Title Text 2")
 
 *Register new business sequence diagram*
-![Register new business](img/RegisterBusinessSequenceDiagram.png "Logo Title Text 1")
+![Register new business](img/RegisterBusinessSequenceDiagram.png "Logo Title Text 3")
 
 *Register new user sequence diagram*
-![Register new user](img/RegisterUserSequenceDiagram.png "Logo Title Text 1")
+![Register new user](img/RegisterUserSequenceDiagram.png "Logo Title Text 4")
 
 *Edit projects list sequence diagram*
-![Edit projects list](img/EditProjectsListSequenceDiagram.png "Logo Title Text 1")
+![Edit projects list](img/EditProjectsListSequenceDiagram.png "Logo Title Text 5")
 
 *Select businesses with close locations*
-![Search business by location](img/ShowCloseLocationsProjectsList.png "Logo Title Text 1")
+![Search business by location](img/ShowCloseLocationsProjectsList.png "Logo Title Text 6")
 
 # Forms Verification
 
