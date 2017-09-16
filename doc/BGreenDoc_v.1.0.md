@@ -67,7 +67,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
 ![Register new business](img/RegisterBusinessSequenceDiagram.png "Logo Title Text 1")
 
 *Register new user sequence diagram*
-![Register new user](img/registerUserSequenceDiagram.png "Logo Title Text 1")
+![Register new user](img/RegisterUserSequenceDiagram.png "Logo Title Text 1")
 
 *Edit projects list sequence diagram*
 ![Edit projects list](img/EditProjectsListSequenceDiagram.png "Logo Title Text 1")
