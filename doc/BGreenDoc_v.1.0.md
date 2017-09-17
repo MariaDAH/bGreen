@@ -26,6 +26,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
      . Signficative payment to register and announce a new business
      . Facebook enterprise page: pay for advertisements
      . Google Adworks
+     . Sustainable events
 ```
 
 # Project Folder Estructure
