@@ -4,18 +4,12 @@
   <head>
 
     <meta charset="utf-8">
-    <base href="bGreen">
+    <base href="bGreenFrontEnd">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>BGreen default</title>
-
-
-    <!--<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
-    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="../bower_components/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,10 +27,12 @@
 
   <body>
 
-    <div class="tagline-upper text-left text-heading text-shadow mt-5 d-none d-lg-block"><a href="cover.html">BGreen</a></div>
-    <div class="tagline-upper text-right">
-       <span class="glyphicon glyphicon-search"></span>
+    <div class="tagline-upper text-left text-heading text-shadow mt-5 d-none d-lg-block">
+      <a href="cover.html">BGreen</a>
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     </div>
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
       <div class="container">
@@ -74,17 +70,72 @@
     <div class="container">
 
       <div class="bg-faded p-4 my-4">
-
-
-      </div>
-
-        <div class="bg-faded p-4 my-4">
         <hr class="divider">
-        <h2 class="text-center text-lg text-uppercase my-0">Beautiful boxes to
-          <strong>showcase your content</strong>
+        <h2 class="text-center text-lg text-uppercase my-0">Go eco!
+          <strong>Sign down here</strong>
         </h2>
         <hr class="divider">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
+        <div class="form-group row">
+          <label for="firstname" class="col-2 col-form-label">Name:</label>
+          <div class="col-10">
+            <input type="text" class="form-control" id="firstname">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lastname" class="col-2 col-form-label">*First name:</label>
+          <div class="col-10">
+            <input type="text" class="form-control" id="lastname">
+          </div>
+        </div>
+         <div class="form-group row">
+          <label for="email" class="col-2 col-form-label">Last Name:</label>
+          <div class="col-10">
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+         <div class="form-group row">
+          <label for="confirmemail" class="col-2 col-form-label">*Email:</label>
+          <div class="col-10">
+            <input type="email" class="form-control" id="confirmemail">
+          </div>
+        </div>
+         <div class="form-group row">
+          <label for="username" class="col-2 col-form-label">*Confirm email:</label>
+          <div class="col-10">
+            <input type="text" class="form-control" id="username">
+          </div>
+        </div>
+         <div class="form-group row">
+          <label for="pwd" class="col-2 col-form-label">*Password:</label>
+          <div class="col-10">
+            <input type="password" class="form-control" id="pwd">
+          </div>
+        </div>
+        <div class="form-group row text-left">
+          <label for="comment" class="col-4 col-form-label">Insert avatar:</label>
+          <div class="col-4">
+            <textarea class="form-control" rows="5" id="avatar"></textarea>
+          </div>
+          <div class="">
+            <span class="form-control glyphicon" id="iconpic"></span>
+            <span class="form-control glyphicon" id="iconcamera"></span>
+          </div>
+        </div>
+        <div class="row text-center">
+              <span class="help-block text-center">* Field required</span>
+        </div>
+        <hr class="divider">
+        <div class="form-group row">
+          <div class="form-check">
+            <label class="form-check-label">
+            <input type="checkbox" class="form-check-input">
+              I accept terms and condtions
+            </label>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -93,6 +144,7 @@
     <footer class="text-center py-5">
       <div class="container">
         <p class="m-0">Copyright &copy; BGreen 2017</p>
+        <span class="glyphicon glyphicon-search"></span>
       </div>
     </footer>
 
@@ -104,3 +156,5 @@
   </body>
 
 </html>
+
+
