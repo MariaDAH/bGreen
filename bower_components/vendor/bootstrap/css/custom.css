@@ -75,3 +75,13 @@ hr.divider {
 .panel-title a{
 	color: #2f8038;
 }
+#headerrow{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.icongroup{
+    color: #2f8038;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1em;
+}

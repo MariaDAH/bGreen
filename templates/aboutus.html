@@ -18,7 +18,8 @@
     <script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bower_components/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../bower_components/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 
     <!-- Custom fonts for this template -->
@@ -29,14 +30,23 @@
     <!-- Custom styles for this template -->
      <link rel="stylesheet" type="text/css" href="../bower_components/vendor/bootstrap/css/custom.css">
 
+
+
   </head>
 
   <body>
 
-    <div class="tagline-upper text-left text-heading text-shadow mt-5 d-none d-lg-block"><a href="cover.html">BGreen</a></div>
-    <div class="tagline-upper text-right">
-       <span class="glyphicon glyphicon-search"></span>
+  <div class="row" id="headerrow">
+    <div class="tagline-upper text-left text-heading text-shadow mt-5 d-none d-lg-block">
+      <a href="cover.html">BGreen</a>
     </div>
+    <div class="tagline-upper" id="icongroup">
+       <span class="glyphicon glyphicon-search icongroup"></span>
+       <span class="glyphicon glyphicon-search icongroup"></span>
+       <span class="glyphicon glyphicon-search icongroup"></span>
+       <span class="glyphicon glyphicon-search icongroup"></span>
+    </div>
+   </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
       <div class="container">
@@ -84,7 +94,7 @@
                 </a>
               </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne"  href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               <div class="panel-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
