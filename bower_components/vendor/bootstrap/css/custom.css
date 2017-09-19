@@ -94,3 +94,18 @@ hr.divider {
     border-color: transparent;
     margin-top: 2em
 }
+.form-check{
+  margin-left:5%;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:3.5rem;
+    margin-left: 3.5rem;
+}
+#paymenticonslist{
+    display: flex;
+    flex-direction: row;
+}
+
