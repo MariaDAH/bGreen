@@ -107,5 +107,7 @@ hr.divider {
 #paymenticonslist{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    display: inline-block;
 }
 
