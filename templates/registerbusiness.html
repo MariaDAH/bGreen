@@ -148,12 +148,12 @@
               <div class="form-group row text-left">
                 <label for="address" class="col-2 col-form-label">*Address:</label>
                 <div class="col-10">
-                  <input type="url" class="form-control">
+                  <input type="address" class="form-control" id="address">
                     <h4>Location here:</h4>
-                    <div id="map" style="width:400px;height:400px;">
+                    <div id="map">
                       My map will go here
                     </div>
-                    <input type="submit">
+                    <input type="button" id="submit" value="Go map location" on_click=codeAddress()>
                 </div>
               </div>
               <div class="form-group row text-left">
@@ -290,25 +290,10 @@
     <script src="../bower_components/vendor/jquery/jquery.min.js"></script>
     <script src="../bower_components/vendor/popper/popper.min.js"></script>
     <script src="../bower_components/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bower_components/vendor/bootstrap/js/custom.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8ExRo7nXIRQPJYy34KyKSfAOCiS-eyc&callback=initMap">
     </script>
-
-
-    <script>
-    function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-
 
   </body>
 

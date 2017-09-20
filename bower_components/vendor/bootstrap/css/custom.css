@@ -72,6 +72,8 @@ hr.divider {
 
 .map-container iframe {
   pointer-events: none;
+  width:400px;
+  height:400px;
 }
 
 .map-container iframe.clicked {
@@ -109,5 +111,9 @@ hr.divider {
     flex-direction: row;
     align-items: center;
     display: inline-block;
+}
+#map{
+    width:400px;
+    height:400px;
 }
 
