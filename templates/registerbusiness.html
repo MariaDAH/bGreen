@@ -149,11 +149,10 @@
                 <label for="address" class="col-2 col-form-label">*Address:</label>
                 <div class="col-10">
                   <input type="address" class="form-control" id="address">
-                    <h4>Location here:</h4>
-                    <div id="map">
+                    <input type="button" id="submit" value="Go map location" on_click=geocodeAddress()>
+                    <div id="map" class="img-fluid">
                       My map will go here
                     </div>
-                    <input type="button" id="submit" value="Go map location" on_click=codeAddress()>
                 </div>
               </div>
               <div class="form-group row text-left">
@@ -281,7 +280,6 @@
     <footer class="text-center py-5">
       <div class="container">
         <p class="m-0">Copyright &copy; BGreen 2017</p>
-
       </div>
     </footer>
 

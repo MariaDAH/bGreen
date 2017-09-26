@@ -5,10 +5,6 @@ function initMap() {
           center: uluru
         });
         var geocoder = new google.maps.Geocoder();
-        /*var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });*/
         document.getElementById('submit').addEventListener('click', function() {
           geocodeAddress(geocoder, map);
         });
@@ -28,3 +24,11 @@ function geocodeAddress(geocoder, resultsMap) {
     }
   });
 }
+
+
+
+
+
+
+
+

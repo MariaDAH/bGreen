@@ -115,62 +115,93 @@
 
     <section>
     <div class="container">
-    <form>
       <div class="bg-faded p-4 my-4">
         <hr class="divider">
         <h2 class="text-center text-lg text-uppercase my-0">Go eco!
           <strong>Sign up here</strong>
         </h2>
         <hr class="divider">
+        <form id="uploadform" class="form-horizontal" enctype="multipart/form-data">
         <div id="box">
           <div class="form-group row">
-            <label for="lastname" class="col-2 col-form-label">*First name:</label>
+            <label for="firstname" class="col-2 col-form-label">First name:</label>
             <div class="col-10">
-              <input type="text" class="form-control" id="lastname">
+              <input type="text" class="form-control" id="firstname" placeholder="Enter you first name here." autofocus="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lastname" class="col-2 col-form-label">Last name:</label>
+            <div class="col-10">
+              <input type="text" class="form-control" id="lastname" placeholder="Enter your last name here.">
             </div>
           </div>
            <div class="form-group row">
-            <label for="email" class="col-2 col-form-label">Last Name:</label>
+            <label for="email" class="col-2 col-form-label" >*Email:</label>
             <div class="col-10">
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email here." required="">
             </div>
           </div>
            <div class="form-group row">
-            <label for="confirmemail" class="col-2 col-form-label">*Email:</label>
+            <label for="confirmemail" class="col-2 col-form-label">*Confirm email:</label>
             <div class="col-10">
-              <input type="email" class="form-control" id="confirmemail">
+              <input type="email" class="form-control" id="confirmemail" placeholder="Confirm your email here." required="">
             </div>
           </div>
            <div class="form-group row">
-            <label for="username" class="col-2 col-form-label">*Confirm email:</label>
+            <label for="username" class="col-2 col-form-label">*Username:</label>
             <div class="col-10">
-              <input type="text" class="form-control" id="username">
+              <input type="text" class="form-control" id="username" required="" placeholder="Enter your username here.">
             </div>
           </div>
            <div class="form-group row">
             <label for="pwd" class="col-2 col-form-label">*Password:</label>
             <div class="col-10">
-              <input type="password" class="form-control" id="pwd">
+              <input type="password" class="form-control" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password here." required="" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
             </div>
           </div>
           <div class="form-group row text-left">
-            <label for="comment" class="col-2 col-form-label">Insert avatar:</label>
+            <label for="avatar" class="col-2 col-form-label">Insert avatar:</label>
             <div class="col-4">
-              <textarea class="form-control" rows="8" id="avatar"></textarea>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="form-control embed-responsive-item" id="avatar"></iframe>
+              </div>
             </div>
             <div class="">
              <ul class="list-group" id="paymenticonslist">
                     <ol>
-                      <a href="search.html" class="list-group-item">
-                        <span class="glyphicon glyphicon-picture"></span>
-                      </a>
+                      <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#selectpic">
+                      <span class="glyphicon glyphicon-picture"></span>
+                      </button>
                     </ol>
                     <ol>
-                      <a href="usersignup.html" class="list-group-item">
+                       <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#takepic">
                         <span class="glyphicon glyphicon-camera"></span>
-                      </a>
+                      </button>
                     </ol>
                 </ul>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div id="selectpic" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Select picture</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <label class="input-group btn btn-default btn-file">
+                      Browse...<input type="file" id="filename">
+                  </label>
+                  <input type="text" class="form-control" id="filetext">
+                  <span class="help-block">Please select one file</span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="selectimg">Save changes</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
           <hr class="divider">
@@ -190,7 +221,7 @@
             </div>
         </div> <!--box-->
       </div>
-      <form>
+      </form>
        <article>
         <div class="bg-faded p-4 my-4">
           <hr class="divider">
@@ -215,6 +246,39 @@
     <script src="../bower_components/vendor/jquery/jquery.min.js"></script>
     <script src="../bower_components/vendor/popper/popper.min.js"></script>
     <script src="../bower_components/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+
+      $(document).on('change', ':file', function() {
+
+        var input = $(this),
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+
+      });
+
+      $(document).ready(function(){
+
+          $(':file').on('fileselect', function(event, numFiles, label) {
+
+              console.log(numFiles);
+              console.log(label);
+              /*$("#avatar").attr('src',label);*/
+              /*$('#filetext').val() = label;*/
+
+          });
+
+          $('#selectimg').on('click', function(){
+
+                var img=$('input:file').val();
+                console.log(img);
+                $("#avatar").attr('src',img);
+
+          });
+
+      });
+
+    </script>
 
   </body>
 
