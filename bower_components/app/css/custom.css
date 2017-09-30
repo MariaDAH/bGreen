@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background: url('../img/bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -6,6 +6,7 @@ body{
   background-size: cover;
   -o-background-size: cover;
 }
+
 h1, h2, h3, h4, h5, h6, .text-heading {
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -24,6 +25,10 @@ footer{
 footer p{
   padding-top: 1.5em;
   font-size: 1.5em;
+}
+
+input,select{
+  height: 2em;
 }
 
 .navbar{
@@ -108,12 +113,6 @@ hr.divider {
   font-size: 1.25rem;
 }
 
-.map-container iframe {
-  pointer-events: none;
-  width:400px;
-  height:400px;
-}
-
 .list-group-item:last-child {
     margin-bottom: 0;
     border-bottom-right-radius: 4px;
@@ -122,9 +121,16 @@ hr.divider {
     border: none;
 }
 
+.map-container iframe {
+  pointer-events: none;
+  width:400px;
+  height:400px;
+}
+
 .map-container iframe.clicked {
   pointer-events: auto;
 }
+
 .tagline-upper a {
   font-size: 1.5em;
   color: #2f8038;
@@ -140,6 +146,7 @@ hr.divider {
 .glyphicon:hover {
    color: #5a4f49;
 }
+
 .form-check{
   margin-left:5%;
 }
@@ -201,7 +208,7 @@ hr.divider {
   margin-bottom: 20px;
 }
 
-.modal-header .close {
+.modal-header.close {
     margin-top: 0.25em;
     margin-right: 1em;
     color: #000;
@@ -210,14 +217,6 @@ hr.divider {
 #map{
     width:400px;
     height:400px;
-}
-
-.map-container iframe {
-  pointer-events: none;
-}
-
-.map-container iframe.clicked {
-  pointer-events: auto;
 }
 
 @media (min-width: 768px){

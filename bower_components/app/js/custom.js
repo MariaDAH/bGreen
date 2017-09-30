@@ -25,6 +25,10 @@ function geocodeAddress(geocoder, resultsMap) {
   });
 }
 
+//Validate credit card number/iban
+
+//Validate expiration date
+
 
 
 

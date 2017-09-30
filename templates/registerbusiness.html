@@ -2,25 +2,25 @@
 <html lang="en">
 
     <head>
-    <meta charset="utf-8">
-    <base href="bGreen">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+      <meta charset="utf-8">
+      <base href="bGreen">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-    <title>BGreen default</title>
+      <title>BGreen default</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <!-- Bootstrap core CSS -->
+      <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico" rel="stylesheet">
+      <!-- Custom fonts for this template -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-     <link rel="stylesheet" type="text/css" href="../bower_components/app/css/custom.css">
+      <!-- Custom styles for this template -->
+       <link rel="stylesheet" type="text/css" href="../bower_components/app/css/custom.css">
   </head>
   <body>
 
@@ -30,36 +30,36 @@
 
       <div class="row">
 
-          <div class="col-lg-6 tagline-upper text-left text-expanded text-heading text-shadow mt-5 d-none d-lg-block">
-              <a class="navbar-brand text-expanded font-weight-bold" href="cover.html">BGreen</a>
-          </div>
+            <div class="col-lg-6 tagline-upper text-left text-expanded text-heading text-shadow mt-5 d-none d-lg-block">
+                <a class="navbar-brand text-expanded font-weight-bold" href="cover.html">BGreen</a>
+            </div>
 
-        <div class="col-lg-6">
+            <div class="col-lg-6">
             <ul class="nav navbar-right navbar-nav list-group float-right">
                 <li class="">
-                  <a href="search.html" class="list-group-item">
+                  <a href="search.html" class="list-group-item" data-toggle="tooltip" title="Search business">
                     <span class="glyphicon glyphicon-search"></span>
                   </a>
                 </li>
                 <li class="">
-                  <a href="usersignup.html" class="list-group-item">
+                  <a href="login.html" class="list-group-item" data-toggle="tooltip" title="Log in">
                     <span class="glyphicon glyphicon-log-in"></span>
                   </a>
                 </li>
                 <li class="">
-                  <a href="login.html" class="list-group-item">
-                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  <a href="usersignup.html" class="list-group-item" data-toggle="tooltip" title="Sign up">
+                    <span class="glyphicon glyphicon-user"></span>
                   </a>
                 </li>
                 <li class="">
-                  <a href="registerbusiness.html" class="list-group-item">
-                    <span class="glyphicon glyphicon-question-sign"></span>
+                  <a href="registerbusiness.html" class="list-group-item" data-toggle="tooltip" title="Register business">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
                   </a>
                 </li>
             </ul>
           </div>
 
-      </div>
+        </div>
 
       </nav>
 
@@ -101,7 +101,7 @@
     <section>
 
     <div class="container">
-
+    <article>
       <form>
         <div class="bg-faded p-4 my-4">
           <hr>
@@ -112,15 +112,15 @@
           <hr class="divider">
           <div class="box">
             <div class="form-group row text-left">
-              <label for="userid" class="col-lg-2 col-form-label">*User id:</label>
+              <label for="userid" class="col-lg-2 col-form-label">*Username:</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="userid">
+                <input type="text" class="form-control" id="userid" placeholder="Enter your username here" autofocus="" required="">
               </div>
             </div>
              <div class="form-group row text-left">
               <label for="pwd" class="col-lg-2 col-form-label">*Password:</label>
               <div class="col-lg-10">
-                <input type="password" class="form-control" id="pwd">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter your password here" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
               </div>
              </div>
              <div class="form-group row text-left">
@@ -128,14 +128,14 @@
                 <div class="col-lg-10">
                   <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">https://bGreen.com/</span>
-                    <input type="url" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="url" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your business site url here">
                   </div>
                 </div>
               </div>
               <div class="form-group row text-left">
                 <label for="address" class="col-lg-2 col-form-label">*Address:</label>
                 <div class="col-lg-10">
-                  <input type="address" class="form-control" id="address">
+                  <input type="address" class="form-control" id="address" placeholder="Enter your business location here" required="">
                     <input type="button" id="submit" value="Go map location" on_click=geocodeAddress()>
                     <div id="map" class="img-fluid">
                       My map will go here
@@ -145,41 +145,41 @@
               <div class="form-group row text-left">
                 <label for="telnum" class="col-lg-2 col-form-label">*Telephone number:</label>
                 <div class="col-lg-10">
-                    <select id="countries_phone1" class="col-lg-4 bfh-countries" data-country="US"></select>
+                    <select id="countries_phone1" class="col-lg-2 bfh-countries" data-country="US"></select>
                     <input type="text" class="col-lg-4 bfh-phone" data-country="countries_phone1">
                 </div>
               </div>
               <div class="form-group row text-left">
                 <label for="comment" class="col-lg-2 col-form-label">Insert comment:</label>
                 <div class="col-lg-10">
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Enter comment about your business here"></textarea>
                 </div>
               </div>
               <div class="form-group row text-left">
-              <label for="amount" class="col-lg-2 col-form-label inline">*Donation ammount:</label>
-              <fieldset class="col-lg-10">
-              <div class="form-group row">
-                <div class="form-check col-lg-4">
-                  <label class="form-check-label radio-inline">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option2">15 GBP
-                  </label>
-                </div>
-                <div class="form-check col-lg-4">
-                  <label class="form-check-label radio-inline">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">35 GBP
-                  </label>
-                </div>
-                <div class="form-check col-lg-4 disabled">
-                    <label class="form-check-label radio-inline">
-                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                      Option three is disabled
-                    </label>
-                </div>
-                </div>
-              </fieldset>
+                <label for="amount" class="col-lg-2 col-form-label inline">Donation ammount:</label>
+                <fieldset class="col-lg-10">
+                <div class="form-group row">
+                    <div class="form-check col-lg-4">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option2">15 GBP
+                      </label>
+                    </div>
+                    <div class="form-check col-lg-4">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">35 GBP
+                      </label>
+                    </div>
+                    <div class="form-check col-lg-4 disabled">
+                        <label class="form-check-label radio-inline">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                          Option three is disabled
+                        </label>
+                    </div>
+                  </div>
+                </fieldset>
               </div>
             <div class="form-group row text-left">
-                <label for="paymentmeth" class="col-lg-2 col-form-label">*Payment method:</label>
+                <label for="paymentmeth" class="col-lg-2 col-form-label">Payment method:</label>
                 <div class="col-lg-10">
                 <ul class="list-group row">
                     <ol>
@@ -208,7 +208,7 @@
              <div class="form-group row text-left">
               <label for="accholder" class="col-lg-2 col-form-label">*Account holder:</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="accholder">
+                <input type="text" class="form-control" id="accholder" required="" placeholder="Enter name on credit card">
               </div>
             </div>
              <div class="form-group row text-left" form-inline>
@@ -229,13 +229,13 @@
              <div class="form-group row text-left">
               <label for="expdate" class="col-lg-2 col-form-label">*Expiration date:</label>
               <div class="col-lg-10">
-                <input type="date" class="form-control" id="expdate">
+                <input type="date" class="form-control" id="expdate" required="">
               </div>
              </div>
             <div class="form-group row">
               <div class="form-check col-lg-5">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
+                    <input type="checkbox" class="form-check-input" required="">
                     I accept terms and condtions
                 </label>
               </div>
@@ -249,23 +249,25 @@
             </div> <!--box-->
           </div> <!--faded-->
         </form>
+        </article>
+
         <article>
         <div class="bg-faded p-4 my-4">
           <hr>
           <hr class="divider">
-          <h2 class="text-center text-lg text-uppercase my-0">Beautiful boxes to
-            <strong>showcase your content</strong>
-          </h2>
-          <hr class="divider">
-          <div class="box">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
-        </div>
+            <h2 class="text-center text-lg text-uppercase my-0">Beautiful boxes to
+              <strong>showcase your content</strong>
+            </h2>
+            <hr class="divider">
+            <div class="box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
+            </div>
         </div>
       </article>
+
     </div> <!-- /.container -->
 
     </section>
-    </body>
 
     <footer class="text-center py-5">
       <div class="container">
@@ -276,9 +278,9 @@
      <!-- Bootstrap core JavaScript -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/app/css/custom.css"></script>
+    <script src="../bower_components/app/js/custom.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key="+"GoogleMapsAPIKey"+"&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8ExRo7nXIRQPJYy34KyKSfAOCiS-eyc&callback=initMap">
     </script>
 
   </body>
