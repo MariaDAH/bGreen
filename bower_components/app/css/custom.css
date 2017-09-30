@@ -219,6 +219,11 @@ hr.divider {
     height:400px;
 }
 
+.carousel-inner>.item>img{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (min-width: 768px){
 
   .navbar-nav>li {
