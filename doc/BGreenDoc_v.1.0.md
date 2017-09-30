@@ -27,6 +27,7 @@ In this text I'll explain the analisys, desing, implentation and test of BGreenS
      . Facebook enterprise page: pay for advertisements
      . Google Adworks
      . Sustainable events
+     . Through cbankpayments registered user can get discounts when buying in organic "eco" business
 ```
 
 # Project Folder Estructure

@@ -12,7 +12,6 @@
     <title>BGreen default</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bower_components/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 
@@ -22,91 +21,80 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-     <link rel="stylesheet" type="text/css" href="../bower_components/vendor/bootstrap/css/custom.css">
+     <link rel="stylesheet" type="text/css" href="../bower_components/app/css/custom.css">
 
   </head>
 
   <body>
 
-  <header>
+    <header>
 
       <nav class="navbar navbar-default navbar-expand-lg navbar-light py-lg-4" role="navigation">
 
-          <!--<div class="container">-->
+      <div class="row">
 
-            <div class="tagline-upper text-left text-expanded text-heading text-shadow mt-5 d-none d-lg-block">
-              <a href="cover.html">BGreen</a>
-            </div>
+          <div class="col-lg-6 tagline-upper text-left text-expanded text-heading text-shadow mt-5 d-none d-lg-block">
+              <a class="navbar-brand text-expanded font-weight-bold" href="cover.html">BGreen</a>
+          </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsemenu1" aria-controls=" collapsemenu1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="col-lg-6">
+            <ul class="nav navbar-right navbar-nav list-group float-right">
+                <li class="">
+                  <a href="search.html" class="list-group-item">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="usersignup.html" class="list-group-item">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="login.html" class="list-group-item">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="registerbusiness.html" class="list-group-item">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                  </a>
+                </li>
+            </ul>
+          </div>
 
-            <div class="collapse navbar-collapse" id="collpasemenu1"">
-                <ul class="nav navbar-right navbar-nav list-group">
-                    <li class="nav-item">
-                      <a href="search.html" class="list-group-item">
-                        <span class="glyphicon glyphicon-search"></span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="usersignup.html" class="list-group-item">
-                        <span class="glyphicon glyphicon-log-in"></span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="login.html" class="list-group-item">
-                        <span class="glyphicon glyphicon-plus-sign"></span>
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="registerbusiness.html" class="list-group-item">
-                        <span class="glyphicon glyphicon-question-sign"></span>
-                      </a>
-                    </li>
-                </ul>
-            </div>
-
-          <!--</div>-->
+      </div>
 
       </nav>
 
       <!-- Menu Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light py-lg-4">
+      <nav class="navbar navbar-expand-lg navbar-light">
 
-        <div class="container">
-
-          <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="cover.html">BGreen</a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav">
-                <li class="nav-item active px-lg-5">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="home.html">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item px-lg-5">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="aboutus.html">About us</a>
-                </li>
-                <li class="nav-item px-lg-5">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="mission.html">Get a mission</a>
-                </li>
-                <li class="nav-item px-lg-5">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="projects.html">Projects</a>
-                </li>
-                 <li class="nav-item px-lg-5">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="faqs.html">Faq's</a>
-                </li>
-                 <li class="nav-item px-lg-5">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="news.html">Outspace news</a>
-                </li>
-              </ul>
-          </div>
-
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav col-lg-12">
+              <li class="nav-item active col-lg-2">
+                <a class="nav-link text-lowercase text-capitalize text-expanded" href="home.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link text-lowercase text-capitalize text-expanded" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link text-lowercase text-capitalize text-expanded" href="mission.html">Get mission</a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link text-lowercase text-capitalize text-expanded" href="projects.html">Projects</a>
+              </li>
+               <li class="nav-item col-lg-2">
+                <a class="nav-link text-lowercase text-capitalize text-expanded" href="faqs.html">Faq's</a>
+              </li>
+               <li class="nav-item col-lg-2">
+                <a class="nav-link text-lowercase text-capitalize text-expanded" href="news.html">Outspace news</a>
+              </li>
+            </ul>
         </div>
 
       </nav>
@@ -116,58 +104,58 @@
     <section>
     <div class="container">
       <div class="bg-faded p-4 my-4">
+        <hr>
         <hr class="divider">
         <h2 class="text-center text-lg text-uppercase my-0">Go eco!
           <strong>Sign up here</strong>
         </h2>
         <hr class="divider">
         <form id="uploadform" class="form-horizontal" enctype="multipart/form-data">
-        <div id="box">
+        <div class="box">
           <div class="form-group row">
-            <label for="firstname" class="col-2 col-form-label">First name:</label>
-            <div class="col-10">
+            <label for="firstname" class="col-lg-2 col-form-label">First name:</label>
+            <div class="col-lg-10">
               <input type="text" class="form-control" id="firstname" placeholder="Enter you first name here." autofocus="">
             </div>
           </div>
           <div class="form-group row">
-            <label for="lastname" class="col-2 col-form-label">Last name:</label>
-            <div class="col-10">
+            <label for="lastname" class="col-lg-2 col-form-label">Last name:</label>
+            <div class="col-lg-10">
               <input type="text" class="form-control" id="lastname" placeholder="Enter your last name here.">
             </div>
           </div>
            <div class="form-group row">
-            <label for="email" class="col-2 col-form-label" >*Email:</label>
-            <div class="col-10">
+            <label for="email" class="col-lg-2 col-form-label" >*Email:</label>
+            <div class="col-lg-10">
               <input type="email" class="form-control" id="email" placeholder="Enter your email here." required="">
             </div>
           </div>
            <div class="form-group row">
-            <label for="confirmemail" class="col-2 col-form-label">*Confirm email:</label>
-            <div class="col-10">
+            <label for="confirmemail" class="col-lg-2 col-form-label">*Confirm email:</label>
+            <div class="col-lg-10">
               <input type="email" class="form-control" id="confirmemail" placeholder="Confirm your email here." required="">
             </div>
           </div>
            <div class="form-group row">
-            <label for="username" class="col-2 col-form-label">*Username:</label>
-            <div class="col-10">
+            <label for="username" class="col-lg-2 col-form-label">*Username:</label>
+            <div class="col-lg-10">
               <input type="text" class="form-control" id="username" required="" placeholder="Enter your username here.">
             </div>
           </div>
            <div class="form-group row">
-            <label for="pwd" class="col-2 col-form-label">*Password:</label>
-            <div class="col-10">
+            <label for="pwd" class="col-lg-2 col-form-label">*Password:</label>
+            <div class="col-lg-10">
               <input type="password" class="form-control" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password here." required="" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
             </div>
           </div>
           <div class="form-group row text-left">
-            <label for="avatar" class="col-2 col-form-label">Insert avatar:</label>
-            <div class="col-4">
+            <label for="avatar" class="col-lg-2 col-form-label">Insert avatar:</label>
+            <div class="col-lg-4">
               <div class="embed-responsive embed-responsive-4by3">
                 <iframe class="form-control embed-responsive-item" id="avatar"></iframe>
               </div>
             </div>
-            <div class="">
-             <ul class="list-group" id="paymenticonslist">
+             <ul class="btn-group">
                     <ol>
                       <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#selectpic">
                       <span class="glyphicon glyphicon-picture"></span>
@@ -178,58 +166,64 @@
                         <span class="glyphicon glyphicon-camera"></span>
                       </button>
                     </ol>
-                </ul>
-            </div>
+              </ul>
           </div>
           <!-- Modal -->
           <div id="selectpic" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+            <div class="modal-dialog row">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title">Select picture</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row">
+                      <h3 class="modal-title">Select picture
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                      </h3>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  <label class="input-group btn btn-default btn-file">
-                      Browse...<input type="file" id="filename">
+                <div class="modal-body btn-group">
+                  <label for="filename" class="btn btn-default btn-file">Browse...
+                      <input type="file" for="filetext" accept=".jpg, .jpeg, .png" id="filename" name="filename">
                   </label>
-                  <input type="text" class="form-control" id="filetext">
-                  <span class="help-block">Please select one file</span>
+                  <input type="text" id="filetext">
                 </div>
+                <span class="help-block">Please select one file</span>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" id="selectimg">Save changes</button>
+                  <button type="button" class="btn btn-default" id="selectimg">Save changes</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
-          <hr class="divider">
-           <div class="form-group row text-center">
-              <div class="form-check">
-                <label class="form-check-label col-md-12">
-                <input type="checkbox" class="form-check-input">
-                  I accept terms and condtions
+
+           <div class="form-group row">
+              <div class="form-check col-lg-5">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    I accept terms and condtions
                 </label>
               </div>
-                <div class="form-actions col-md-5">
-                  <button type="submit" class="btn btn-default">Sign up now</button>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-default btn-lg">Sign up now</button>
                 </div>
             </div>
-             <div class="form-group row text-left">
-                  <span class="help-block">*Field required</span>
+
+            <div class="form-group row text-left">
+                  <span class="help-block">* Field required</span>
             </div>
         </div> <!--box-->
       </div>
       </form>
        <article>
         <div class="bg-faded p-4 my-4">
+          <hr>
           <hr class="divider">
           <h2 class="text-center text-lg text-uppercase my-0">Beautiful boxes to
-            <strong>showcase your content</strong>
+              <strong>showcase your content</strong>
           </h2>
           <hr class="divider">
+          <div class="box">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
+          </div>
         </div>
       </article>
       </section>
@@ -237,16 +231,13 @@
     <!-- /.container -->
 
     <footer class="text-center py-5">
-      <div class="container">
-        <p class="m-0">Copyright &copy; BGreen 2017</p>
-      </div>
+        <p>Copyright &copy; BGreen 2017</p>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../bower_components/vendor/jquery/jquery.min.js"></script>
-    <script src="../bower_components/vendor/popper/popper.min.js"></script>
-    <script src="../bower_components/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
 
       $(document).on('change', ':file', function() {
 
@@ -254,6 +245,7 @@
         numFiles = input.get(0).files ? input.get(0).files.length : 1,
         label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
         input.trigger('fileselect', [numFiles, label]);
+        $('#filetext').attr('value',label);
 
       });
 
@@ -263,9 +255,6 @@
 
               console.log(numFiles);
               console.log(label);
-              /*$("#avatar").attr('src',label);*/
-              /*$('#filetext').val() = label;*/
-
           });
 
           $('#selectimg').on('click', function(){

@@ -1,0 +1,244 @@
+body{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: url('../img/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+h1, h2, h3, h4, h5, h6, .text-heading {
+  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+footer{
+  background-color: #2f8038;
+  font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
+  color:#9d9d9d;
+  height: 100px;
+}
+
+footer p{
+  padding-top: 1.5em;
+  font-size: 1.5em;
+}
+
+.navbar{
+  font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
+  background-color: #2f8038;
+}
+
+.nav.navbar-right{
+  margin-right: 0em;
+}
+
+.tagline-upper {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.25em;
+  margin-top:0.25em;
+  font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
+}
+
+.tagline-upper a:hover{
+   color: #5a4f49;
+}
+
+.navbar.navbar-default{
+    background-color: transparent;
+    border-color: black;
+    height: 75px;
+    border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #2f8038;
+}
+
+.nav-link{
+  font-size: 1.2em;
+  color:#9d9d9d;
+}
+
+.navbar-default.navbar-nav>ul>li>a {
+    background: transparent;
+    border-color: transparent;
+}
+
+.navbar-default.navbar-nav>ul>li>a:hover {
+    color:#5a4f49;
+    text-decoration: none;
+}
+
+.nav-item{
+  list-style-type: none;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+hr.divider {
+  border-color: #292b2c;
+  max-width: 250px;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tagline-lower {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.text-expanded {
+  letter-spacing: 2px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.map-container iframe {
+  pointer-events: none;
+  width:400px;
+  height:400px;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: transparent;
+    border: none;
+}
+
+.map-container iframe.clicked {
+  pointer-events: auto;
+}
+.tagline-upper a {
+  font-size: 1.5em;
+  color: #2f8038;
+}
+.panel-title a{
+  color: #2f8038;
+}
+.glyphicon {
+    font-size: 2.5em;
+    color: #2f8038;
+    background: transparent !important;
+}
+.glyphicon:hover {
+   color: #5a4f49;
+}
+.form-check{
+  margin-left:5%;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    margin-left: auto;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+    background:transparent;
+}
+#filetext{
+    height: 33px;
+    width: 470px;
+}
+.modal-title{
+    text-align: left;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:3.5rem;
+    margin-left: 3.5rem;
+}
+
+.form-check {
+    margin-left: 0;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #2f8038;
+    border-color: #ccc;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+    margin: 0.5em;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.container{
+  margin-bottom: 20px;
+}
+
+.modal-header .close {
+    margin-top: 0.25em;
+    margin-right: 1em;
+    color: #000;
+}
+
+#map{
+    width:400px;
+    height:400px;
+}
+
+.map-container iframe {
+  pointer-events: none;
+}
+
+.map-container iframe.clicked {
+  pointer-events: auto;
+}
+
+@media (min-width: 768px){
+
+  .navbar-nav>li {
+      list-style-type: none;
+  }
+
+  .navbar {
+    border-radius: 4px;
+    height: 70px;
+  }
+
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      font-size: x-large;
+  }
+   .navbar-nav>li>a:hover {
+    color:#5a4f49;
+  }
+
+}
