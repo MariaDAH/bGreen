@@ -121,6 +121,15 @@ hr.divider {
     border: none;
 }
 
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: none;
+}
+
 .map-container iframe {
   pointer-events: none;
   width:400px;
