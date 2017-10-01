@@ -255,3 +255,14 @@ hr.divider {
   }
 
 }
+
+@media (min-width: 992px)
+{
+  .col-md-offset-2 {
+      margin-left: 0.76666667%;
+  }
+
+  .col-md-4 {
+    width: 32.33333333%;
+  }
+}
