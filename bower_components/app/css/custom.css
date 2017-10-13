@@ -31,6 +31,10 @@ input,select{
   height: 2em;
 }
 
+.navbar-inverse{
+  border:none;
+}
+
 .navbar{
   font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
   background-color: #2f8038;
@@ -56,6 +60,7 @@ input,select{
     border-color: black;
     height: 75px;
     border: none;
+    margin-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -240,31 +245,36 @@ hr.divider {
 }
 
 
-  .navbar-nav>li {
-      list-style-type: none;
-  }
+.navbar-nav>li {
+    list-style-type: none;
+}
 
-  .navbar {
-    border-radius: 4px;
-    height: 70px;
-  }
+.navbar {
+  border-radius: 4px;
+  height: 70px;
+}
 
-  .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-decoration: none;
-      font-size: x-large;
-  }
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: x-large;
+}
 
-  .navbar-nav>li>a:hover {
-    color:#5a4f49;
-  }
+.navbar-nav>li>a:hover {
+  color:#5a4f49;
+}
 
-  .col-md-offset-2 {
-      margin-left: 0.76666667%;
-  }
+.col-md-offset-2 {
+    margin-left: 0.76666667%;
+}
 
-  .col-md-4 {
-    width: 32.33333333%;
-  }
+.col-md-4 {
+  width: 32.33333333%;
+}
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: transparent;
+    padding: 0px;
+}
