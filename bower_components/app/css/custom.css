@@ -198,6 +198,15 @@ hr.divider {
     text-align: left;
 }
 
+.bs-panel{
+  padding: 2em;
+  border-color: #000;
+  border: 0.1em solid;
+  background-color: #99D099;
+  width:80%;
+  margin-top: 3%;
+}
+
 .box{
     display: flex;
     flex-direction: column;
@@ -277,4 +286,25 @@ hr.divider {
     color: #fff;
     background-color: transparent;
     padding: 0px;
+}
+
+#selectbtn, #closebtn{
+    background-color:#99D099;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.boxpanel .p{
+   font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
+   font-size: 30px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
 }
