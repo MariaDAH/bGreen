@@ -28,25 +28,86 @@ function geocodeAddress(geocoder, resultsMap) {
 }
 
 
+//Upload picture
+$(document).on('change', ':file', function() {
+
+        var input = $(this),
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+        $('#filetext').attr('value',label);
+
+      });
+
+      $(document).ready(function(){
+
+          $(':file').on('fileselect', function(event, numFiles, label) {
+
+              console.log(numFiles);
+              console.log(label);
+          });
+
+          $('#selectimg').on('click', function(){
+
+                var img=$('input:file').val();
+                console.log(img);
+                $("#avatar").attr('src',img);
+
+          });
+
+      });
+
+
+
   $("#login").click(function(){
-       var loginp = document.getElementById('loginpnl');
-       var searchp = document.getElementById('searchpnl');
-       //if(loginp.display == none){
-          var section = document.getElementById('mySection');
-          section.remove();
-           $("#loginpnl").slideToggle('slow');
-        //}
+       var section = document.getElementById('mySection');
+       if(section != undefined)
+       {
+         section.remove();
+       }
+       $("#searchpnl").hide();
+       $("registerpnl").hide();
+       $("signuppnl").hide();
+       $("#loginpnl").slideToggle('slow');
       })
 
       $("#search").click(function(){
-       var loginp = document.getElementById('loginpnl');
-       var searchp = document.getElementById('searchpnl');
-        //if(searchp.display==none){
-          var section = document.getElementById('mySection');
+
+        var section = document.getElementById('mySection');
+        if(section != undefined)
+        {
           section.remove();
-          $("#searchpnl").slideToggle('slow');
-        //}
+        }
+         $("#loginpnl").hide();
+         $("registerpnl").hide();
+         $("signuppnl").hide();
+         $("#searchpnl").slideToggle('slow');
       })
+
+      $("#register").click(function(){
+        var section = document.getElementById('mySection');
+        if(section != undefined)
+        {
+          section.remove();
+        }
+         $("#loginpnl").hide();
+         $("searchpnl").hide();
+         $("signuppnl").hide();
+         $("#registerpnl").slideToggle('slow');
+      })
+
+        $("#signup").click(function(){
+        var section = document.getElementById('mySection');
+        if(section != undefined)
+        {
+          section.remove();
+        }
+        $("#loginpnl").hide();
+        $("searchpnl").hide();
+        $("registerpnl").hide();
+        $("#signuppnl").slideToggle('slow');
+      })
+
 
 //Validate credit card number/iban
 

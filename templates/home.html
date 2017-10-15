@@ -43,14 +43,10 @@
                     <span class="glyphicon glyphicon-log-in" data-toggle="tooltip" title="Log in" id="login"></span>
                 </li>
                 <li class="">
-                  <a href="usersignup.html" class="list-group-item" data-toggle="tooltip" title="Sign up">
-                    <span class="glyphicon glyphicon-user"></span>
-                  </a>
+                    <span class="glyphicon glyphicon-user" data-toggle="tooltip" title="Sign up" id="signup"></span>
                 </li>
                 <li class="">
-                  <a href="registerbusiness.html" class="list-group-item" data-toggle="tooltip" title="Register business">
-                    <span class="glyphicon glyphicon-plus-sign"></span>
-                  </a>
+                    <span class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" title="Register business" id="register"></span>
                 </li>
             </ul>
           </div>
@@ -182,9 +178,25 @@
           <strong>showcase your content</strong>
         </h2>
         <hr class="divider">
-        <div class="box">
+        <!--<div class="box">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
-        </div>
+        </div>-->
+        <div class="box">
+            <ul class="nav nav-pills pull-right">
+                <li class="">
+                    <span class="glyphicon glyphicon-search" data-toggle="tooltip" title="Search business" id="search"></span>
+                </li>
+                <li class="">
+                    <span class="glyphicon glyphicon-log-in" data-toggle="tooltip" title="Log in" id="login"></span>
+                </li>
+                 <li class="">
+                    <span class="glyphicon glyphicon-user" data-toggle="tooltip" title="Sign up" id="signup"></span>
+                </li>
+                <li class="">
+                    <span class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" title="Register business" id="register"></span>
+                </li>
+            </ul>
+          </div>
       </div>
       </article>
 
@@ -193,11 +205,292 @@
 
     </section>
 
+
+    <div class="bs-panel container" id="registerpnl">
+    <div class="panel panel-info">
+    <div class="panel-body">
+      <form>
+        <div class="bg-faded p-4 my-4">
+          <hr class="divider">
+          <h2 class="text-center text-lg text-uppercase my-0">Go eco!
+            <strong>Register your business here</strong>
+          </h2>
+          <hr class="divider">
+          <div class="box">
+            <div class="form-group row text-left">
+              <label for="userid" class="col-lg-2 col-form-label">*Username:</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="userid" placeholder="Enter your username here" autofocus="" required="">
+              </div>
+            </div>
+             <div class="form-group row text-left">
+              <label for="pwd" class="col-lg-2 col-form-label">*Password:</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter your password here" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+              </div>
+             </div>
+             <div class="form-group row text-left">
+                <label for="linkto" class="col-lg-2 col-form-label">*Site url:</label>
+                <div class="col-lg-10">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">https://bGreen.com/</span>
+                    <input type="url" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your business site url here">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row text-left">
+                <label for="address" class="col-lg-2 col-form-label">*Address:</label>
+                <div class="col-lg-10">
+                  <input type="address" class="form-control" id="address" placeholder="Enter your business location here" required="">
+                    <input type="button" id="submit" value="Go map location" on_click=geocodeAddress()>
+                    <div id="map" class="img-fluid">
+                      My map will go here
+                    </div>
+                </div>
+              </div>
+              <div class="form-group row text-left">
+                <label for="telnum" class="col-lg-2 col-form-label">*Telephone number:</label>
+                <div class="col-lg-10">
+                    <select id="countries_phone1" class="col-lg-2 bfh-countries" data-country="US"></select>
+                    <input type="text" class="col-lg-4 bfh-phone" data-country="countries_phone1">
+                </div>
+              </div>
+              <div class="form-group row text-left">
+                <label for="comment" class="col-lg-2 col-form-label">Insert comment:</label>
+                <div class="col-lg-10">
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Enter comment about your business here"></textarea>
+                </div>
+              </div>
+              <div class="form-group row text-left">
+                <label for="amount" class="col-lg-2 col-form-label inline">Donation ammount:</label>
+                <fieldset class="col-lg-10">
+                <div class="form-group row">
+                    <div class="form-check col-lg-4">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option2">15 GBP
+                      </label>
+                    </div>
+                    <div class="form-check col-lg-4">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">35 GBP
+                      </label>
+                    </div>
+                    <div class="form-check col-lg-4 disabled">
+                        <label class="form-check-label radio-inline">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                          Option three is disabled
+                        </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            <div class="form-group row text-left">
+                <label for="paymentmeth" class="col-lg-2 col-form-label">Payment method:</label>
+                <div class="col-lg-10">
+                <ul class="list-group row">
+                    <ol class="list-group-item col-lg-3">
+                       <label class="form-check-label radio-inline">
+                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                          <span class="glyphicon glyphicon-credit-card"></span>
+                          Visa
+                        </label>
+                    </ol>
+                    <ol class="list-group-item col-lg-3">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                        <span class="glyphicon glyphicon-xs glyphicon-credit-card"></span>
+                        Mastercard
+                      </label>
+                    </ol>
+                    <ol class="list-group-item col-lg-3">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                        <span class="glyphicon glyphicon-credit-card"></span>
+                        AmericanExpress
+                      </label>
+                    </ol>
+                    <ol class="list-group-item col-lg-3">
+                      <label class="form-check-label radio-inline">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                        <span class="glyphicon glyphicon-credit-card"></span>
+                        Paypal
+                      </label>
+                    </ol>
+                </ul>
+              </div>
+            </div>
+             <div class="form-group row text-left">
+              <label for="accholder" class="col-lg-2 col-form-label">*Account holder:</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="accholder" required="" placeholder="Enter name on credit card">
+              </div>
+            </div>
+             <div class="form-group row text-left" form-inline>
+              <label for="accnum" class="col-lg-2 col-form-label">*Account Number:</label>
+              <div class="col-lg-2">
+                <input type="number" class="form-control" id="accnumber1">
+              </div>
+              <div class="col-lg-2">
+                <input type="number" class="form-control" id="accnumber2">
+              </div>
+              <div class="col-lg-2">
+                <input type="number" class="form-control" id="accnumber3">
+              </div>
+              <div class="col-lg-2">
+                <input type="number" class="form-control" id="accnumber4">
+              </div>
+            </div>
+             <div class="form-group row text-left">
+              <label for="expdate" class="col-lg-2 col-form-label">*Expiration date:</label>
+              <div class="col-lg-10">
+                <input type="date" class="form-control" id="expdate" required="">
+              </div>
+             </div>
+            <div class="form-group row">
+              <div class="form-check col-lg-5">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" required="">
+                    I accept terms and condtions
+                </label>
+              </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-default btn-lg">Register your business</button>
+                </div>
+            </div>
+             <div class="form-group row text-left">
+                  <span class="help-block">*Field required</span>
+            </div>
+            </div> <!--box-->
+          </div> <!--faded-->
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="bs-panel container" id="signuppnl">
+    <div class="panel panel-info">
+    <div class="panel-body">
+      <div class="bg-faded p-4 my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">Go eco!
+          <strong>Sign up here</strong>
+        </h2>
+        <hr class="divider">
+        <form>
+        <div class="box">
+          <div class="form-group row">
+            <label for="firstname" class="col-lg-2 col-form-label">First name:</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="firstname" placeholder="Enter you first name here." autofocus="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lastname" class="col-lg-2 col-form-label">Last name:</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="lastname" placeholder="Enter your last name here.">
+            </div>
+          </div>
+           <div class="form-group row">
+            <label for="email" class="col-lg-2 col-form-label" >*Email:</label>
+            <div class="col-lg-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email here." required="">
+            </div>
+          </div>
+           <div class="form-group row">
+            <label for="confirmemail" class="col-lg-2 col-form-label">*Confirm email:</label>
+            <div class="col-lg-10">
+              <input type="email" class="form-control" id="confirmemail" placeholder="Confirm your email here." required="">
+            </div>
+          </div>
+           <div class="form-group row">
+            <label for="username" class="col-lg-2 col-form-label">*Username:</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="username" required="" placeholder="Enter your username here.">
+            </div>
+          </div>
+           <div class="form-group row">
+            <label for="pwd" class="col-lg-2 col-form-label">*Password:</label>
+            <div class="col-lg-10">
+              <input type="password" class="form-control" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password here." required="" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            </div>
+          </div>
+          <div class="form-group row text-left">
+            <label for="avatar" class="col-lg-2 col-form-label">Insert avatar:</label>
+            <div class="col-lg-4">
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="form-control embed-responsive-item" id="avatar"></iframe>
+              </div>
+            </div>
+             <ul class="btn-group">
+                    <ol>
+                      <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#selectpic">
+                      <span class="glyphicon glyphicon-picture"></span>
+                      </button>
+                    </ol>
+                    <ol>
+                       <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#takepic">
+                        <span class="glyphicon glyphicon-camera"></span>
+                      </button>
+                    </ol>
+              </ul>
+          </div>
+          <!-- Modal -->
+          <div id="selectpic" class="modal fade" role="dialog">
+            <div class="modal-dialog row">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="row">
+                      <h3 class="modal-title">Select picture
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                      </h3>
+                  </div>
+                </div>
+                <div class="modal-body btn-group">
+                  <label for="filename" class="btn btn-default btn-file">Browse...
+                      <input type="file" for="filetext" accept=".jpg, .jpeg, .png" id="filename" name="filename">
+                  </label>
+                  <input type="text" id="filetext">
+                </div>
+                <span class="help-block">Please select one file</span>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" id="selectimg">Save changes</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="form-group row">
+              <div class="form-check col-lg-5">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" required="">
+                    I accept terms and condtions
+                </label>
+              </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-default btn-lg">Sign up now</button>
+                </div>
+            </div>
+            <div class="form-group row text-left">
+                  <span class="help-block">* Field required</span>
+            </div>
+        </div>  <!--box-->
+      </div>
+      </form>
+      </div>
+      </div>
+    </div>
+
         <!--Show panel with javascript on click -->
-      <div class="bs-panel container" id="loginpnl">
+    <div class="bs-panel container" id="loginpnl">
         <div class="panel panel-info">
           <div class="panel-body">
-            <h2>Log in here</h2>
+          <hr class="divider">
+          <h2 class="text-center text-lg text-uppercase my-0">Go eco!
+            <strong>Log in here</strong>
+          </h2>
+          <hr class="divider">
             <form>
               <div class="bg-faded p-4 my-4">
                 <div class="boxpanel">
@@ -236,10 +529,15 @@
        </div>
     </div>
 
+
     <div class="bs-panel container" id="searchpnl">
       <div class="panel panel-info">
           <div class="panel-body">
-            <h2>Make your search choice</h2>
+           <hr class="divider">
+          <h2 class="text-center text-lg text-uppercase my-0">Go eco!
+            <strong>Search for business location here</strong>
+          </h2>
+          <hr class="divider">
             <form>
               <div class="bg-faded p-4 my-4">
                 <div class="boxpanel">
@@ -291,6 +589,9 @@
     <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../bower_components/app/js/custom.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8ExRo7nXIRQPJYy34KyKSfAOCiS-eyc&callback=initMap">
+    </script>
 
   </body>
 
