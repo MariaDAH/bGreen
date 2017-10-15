@@ -72,15 +72,11 @@ input,select{
   color:#9d9d9d;
 }
 
-.navbar-default.navbar-nav>ul>li>a {
-    background: transparent;
-    border-color: transparent;
+.nav-pills>li:hover{
+    text-decoration: none;
+    background-color: #eee;
 }
 
-.navbar-default.navbar-nav>ul>li>a:hover {
-    color:#5a4f49;
-    text-decoration: none;
-}
 
 .nav-item{
   list-style-type: none;
@@ -204,7 +200,7 @@ hr.divider {
   border: 0.1em solid;
   background-color: #99D099;
   width:80%;
-  margin-top: 3%;
+  display: none;
 }
 
 .box{
@@ -308,3 +304,16 @@ hr.divider {
   line-height: 1.42;
   border-radius: 15px;
 }
+
+#login, #search{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#login, #search:hover{
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+}
+
