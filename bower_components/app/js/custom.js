@@ -28,6 +28,16 @@ function geocodeAddress(geocoder, resultsMap) {
 }
 
 
+function registerBusiness(){
+     var section = document.getElementById('mySection');
+     if(section != undefined)
+     {
+        section.remove();
+     }
+     $("#registerpnl").show('slow');
+
+}
+
 //Upload picture
 $(document).on('change', ':file', function() {
 
@@ -56,8 +66,6 @@ $(document).on('change', ':file', function() {
           });
 
       });
-
-
 
   $("#login").click(function(){
        var section = document.getElementById('mySection');

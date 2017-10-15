@@ -317,3 +317,20 @@ hr.divider {
   padding-left: 5px;
 }
 
+.fa {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin: 15px;
+    position: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2f8038;
+    font-size:xx-large;
+}
+
+
+#brandIcons {
+    padding-left: 377px;
+    margin-bottom: 0;
+    list-style: none;
+}
