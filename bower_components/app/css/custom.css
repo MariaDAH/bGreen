@@ -328,9 +328,13 @@ hr.divider {
     font-size:xx-large;
 }
 
+.box1{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 #brandIcons {
-    padding-left: 377px;
     margin-bottom: 0;
     list-style: none;
 }
