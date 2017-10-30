@@ -7,10 +7,6 @@ body {
   -o-background-size: cover;
 }
 
-#page-top {
-  background: url('../img/header-bg.jpg') no-repeat center center fixed;
-}
-
 h1, h2, h3, h4, h5, h6, .text-heading {
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -35,6 +31,77 @@ input,select{
   height: 2em;
 }
 
+#page-top {
+  background: url('../img/header-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#mainNav{
+  background-color: transparent;
+  margin-top: 0px;
+}
+
+
+header.masthead {
+
+  text-align: center;
+  color: white;
+  /*background-image: url("../img/header-bg.jpg");*/
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+
+}
+header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+#menubarResponsive{
+  /*width: 700px;*/
+  margin-top: 15px;
+  float:right;
+}
+
+#menubarResponsive>ul>li>a{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.navbar-brand {
+   font-size: 30px;
+   color: #ec981a;
+}
+
+
+.navbar-brand:hover {
+
+   color:white;
+}
+
 .navbar-inverse{
   border:none;
 }
@@ -47,6 +114,7 @@ input,select{
 .nav.navbar-right{
   margin-right: 0em;
 }
+
 
 .tagline-upper {
   font-size: 4.5rem;
@@ -71,6 +139,12 @@ input,select{
     color: #2f8038;
 }
 
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #5e5e5e;
+    background-color: #eee;
+}
+
 .nav-link{
   font-size: 1.2em;
   color:#9d9d9d;
@@ -81,6 +155,13 @@ input,select{
     background-color: #eee;
 }
 
+.navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-nav>li>a:hover {
+    color: #ec981a;
+}
 
 .nav-item{
   list-style-type: none;
@@ -341,4 +422,147 @@ hr.divider {
 #brandIcons {
     margin-bottom: 0;
     list-style: none;
+}
+
+#sect1{
+  height: 800px;
+}
+
+#sect2{
+  height: 800px;
+  margin-left: 5px;
+}
+
+.col-xs-8{
+  width: 66%;
+}
+
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 650px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+.newpic {
+  width: 100%;
+}
+
+.tab-pane{
+  height:770px;
+  overflow-y:scroll;
+  width:100%;
+  border:none;
+}
+
+#faq{
+  color: #2f8038;
+  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.submitfaq{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.section-title{
+    list-style-type: none;
+    font-weight: bold;
+    color: #2f8038;
+}
+
+.section-item{
+    list-style-type: none;
+    text-align: left;
+}
+
+.section-title>ul{
+   margin-left: 150px;
+}
+
+.section-item>a{
+  color:#34b733;
+}
+
+#foot{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+audio{
+  display: none;
+}
+
+
+.container-section{
+  width: 100%;
+  height: 400px;
+}
+
+.container-section-info{
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+.section-title{
+  margin-top: 50px;
+}
+
+#box3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#contactForm{
+  height: 270px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 700px){
+
+.col-xs-8{
+
+  width: 65%;
+
+}
+
+.container-section{
+  width: 100%;
+  height: 400px;
+}
+
+.section-title>ul{
+    margin-left: 15px;
+}
+
+
+
+#sect1{
+  height: 1200px;
+}
+
+#sect2{
+  height: 1200px;
+  margin-left: 5px;
+}
+
+
 }
