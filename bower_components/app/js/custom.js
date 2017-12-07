@@ -117,6 +117,61 @@ $(document).on('change', ':file', function() {
       })
 
 
+
+
+function showAndPlayVideo(){
+
+    //show and play video when clicking icon
+    var video = document.getElementById("media-video");
+
+    video.style.display ='inline';
+    if (video.hasAttribute("controls")) {
+        video.removeAttribute("controls");
+    } else {
+      video.setAttribute("controls","controls");
+      video.setAttribute('autoplay',true);
+    }
+}
+
+
+
+var stopVideo = function (element) {
+    var iframe = element.querySelector( 'iframe');
+    var video = element.querySelector( 'video' );
+    if ( iframe !== null ) {
+        var iframeSrc = iframe.src;
+        iframe.src = iframeSrc;
+    }
+    if ( video !== null ) {
+        video.pause();
+    }
+};
+
+
+//Stop website music
+
+$("#stopmusic").click(function(){
+
+  $("#stopmusic").toggle('100');
+  var music = document.getElementById("music");
+  music.muted = true;
+  $(this).html('<span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>');
+  $("#playmusic").addClass("makeVisible");
+})
+
+
+//Start website music
+
+$("#playmusic").click(function(){
+
+  $("#playmusic").toggle('100');
+  var music = document.getElementById("music");
+  music.autoplay = true;
+  $(this).html('<span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>');
+  $("#stopmusic").addClass("makeVisible");
+})
+
+
 //Validate credit card number/iban
 
 //Validate expiration date

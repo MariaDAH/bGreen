@@ -79,6 +79,7 @@ header.masthead .intro-text .intro-heading {
   text-transform: uppercase;
 }
 
+
 #menubarResponsive{
   /*width: 700px;*/
   margin-top: 15px;
@@ -93,13 +94,13 @@ header.masthead .intro-text .intro-heading {
 
 .navbar-brand {
    font-size: 30px;
-   color: #ec981a;
+   color: white;
 }
 
 
 .navbar-brand:hover {
 
-   color:white;
+   color:#5a4f49;
 }
 
 .navbar-inverse{
@@ -137,12 +138,17 @@ header.masthead .intro-text .intro-heading {
 
 .navbar-default .navbar-brand {
     color: #2f8038;
+    font-size: 1.5em;
+    margin-top: 15px;
 }
 
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: #5e5e5e;
     background-color: #eee;
+    margin-left: 3px;
+    padding-top: 10px;
+    height: 1em;
 }
 
 .nav-link{
@@ -232,7 +238,7 @@ hr.divider {
   color: #2f8038;
 }
 .glyphicon {
-    font-size: 2.5em;
+    font-size: 4em;
     color: #2f8038;
     background: transparent !important;
 }
@@ -405,12 +411,30 @@ hr.divider {
 .fa {
     display: inline-block;
     text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    margin: 15px;
+    -webkit-font-soothing: antialiased;
+    margin-left: 10px;
+    margin-bottom: 10px;
     position: inherit;
     -moz-osx-font-smoothing: grayscale;
     color: #2f8038;
     font-size:xx-large;
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    margin-left: 2em;
+}
+
+.service-heading{
+  margin-left:1em;
+}
+.text-muted {
+  margin-left:1em;
 }
 
 .box1{
@@ -418,6 +442,8 @@ hr.divider {
   flex-direction: row;
   justify-content: center;
 }
+
+
 
 #brandIcons {
     margin-bottom: 0;
@@ -494,16 +520,104 @@ hr.divider {
   justify-content: center;
 }
 
+
+/* Cover section audio*/
+
 audio{
   display: none;
 }
 
 
-.container-section{
-  width: 100%;
-  height: 400px;
+.music-player{
+  position:relative;
+  text-align: center;
+  top: -60px;
 }
 
+.makeVisible{
+  display: visible;
+}
+
+
+
+/*Cover section Video*/
+
+.container-section-video{
+  width: 100%;
+  height: 487px;
+  position: relative;
+  top:0px;
+  left:0px;
+}
+
+.video-player{
+  position: absolute;
+  top:400px;
+  left:650px;
+}
+
+.video-container{
+  position: absolute;
+}
+
+.close{
+  visibility: visible;
+  font-size: 40px;
+  color: green;
+  position: relative;
+  margin-top: -430px;
+  margin-left: -645px;
+}
+
+#media-video{
+  display: none;
+  position: absolute;
+  margin-top: -450px;
+  margin-left: -300px;
+}
+
+
+/*Cover section services*/
+
+.container-section-services{
+  width: 100%;
+  height: 540px;
+  border-bottom: solid black 1px;
+}
+
+
+.square {
+    width: 100%;
+    height: 250px;
+    background-color: yellow;
+    border-color: black;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    position: absolute;
+    text-align: center;
+}
+
+.square2 {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    border-color: black;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.square2>img{
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  top: 0px;
+}
+
+
+
+/*What is this?*/
 
 .text-muted {
     color: #777;
@@ -542,6 +656,9 @@ audio{
   width:840px;
   height: 400px;
 }
+
+
+
 
 @media screen and (max-width: 700px){
 

@@ -4,7 +4,6 @@
   <head>
 
     <meta charset="utf-8">
-    <base href="bGreen">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,7 +30,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container-fluid">
-      <a class="navbar-brand js-scroll-trigger" href="home.html" id="startmnu">Start Bgreen</a>
+      <a class="navbar-brand js-scroll-trigger" href="home.html" id="startmnu">Start Okra</a>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menubarResponsive">
           <span class="icon-bar"></span>
       </button>
@@ -39,9 +38,6 @@
               <ul class="navbar-nav col-lg-12">
                 <li class="nav-item col-lg-2">
                   <a class="nav-link text-lowercase text-capitalize text-expanded" href="#video">Watch</a>
-                </li>
-                <li class="nav-item col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="#">Blog</a>
                 </li>
                 <li class="nav-item col-lg-2">
                   <a class="nav-link text-lowercase text-capitalize text-expanded" href="#services">Services</a>
@@ -60,73 +56,97 @@
     </div>
   </nav>
 
+
   <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Your favorite source for a better life.</div>
-          <div class="intro-heading">#BGreen. Let's change it.</div>
-          <audio controls= "controls">
-            <source src="" type="audio/mpeg; codecs=mp3"/>
-            <source src="" type="audio/ogg; codecs=vorbis"/>
-            <!-- add other fallback solution here, eg. Your browser does not support the <code>audio</code> element -->
+          <div class="intro-heading">#OKRA. Let's make a change.</div>
+        </div>
+        <div class="music-player">
+          <audio controls autoplay loop muted id="music">
+              <source src="../bower_components/app/media/AncoraQui.mp3" type="audio/mpeg"/>
           </audio>
-          <a href="#controls">
-            <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music"></span>
-           <a>
-          <a href="#controls" style="display: none">
-            <span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music"></span>
-          </a>
+          <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>
+          <span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>
         </div>
       </div>
     </header>
 
-
-
   <section id="video">
-  <div class="container-section bg-faded">
-    <video controls= "controls">
-      <source src=""/>
-    </video>
-  </div>
-  </section>
-  <section id="services">
-      <div class="container-section bg-faded">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Adverts</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Health</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Pleisure</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
+    <div class="container-section-video">
+      <img src="../bower_components/app/img/turtle.jpg"/>
+      <div class="video-player">
+        <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play video" onclick="showAndPlayVideo()"></span>
+        <div class="video-container">
+            <div class="close" data-toggle="tooltip" tittle="Close video"><strong>X</strong></div>
+            <video id="media-video">
+                <source src="../bower_components/app/media/MP4_Bunny.mp4" type="video/MP4"/>
+            </video>
         </div>
       </div>
+    </div>
   </section>
+
+  <section id="services">
+      <div class="container-section-services bg-faded">
+        <div class="row">
+          <div class="col-md-4">
+              <div class="square">
+                 <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                 </span>
+                <h4 class="service-heading">Health</h4>
+                <p class="text-muted">It is a way of eating that emphasizes the foods humans have evolved to eat for hundreds of thousands of years, before the agricultural and industrial revolutions.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="square2">
+                <img src="../bower_components/app/img/colorsindia.jpg"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="square">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Leisure & Pleasure</h4>
+            <p class="text-muted">As nouns the difference between leisure and pleasure is that leisure is freedom provided by the cessation of activities while pleasure is (uncountable) a state of being pleased.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="square2">
+                <img src="../bower_components/app/img/indiadesert.jpg"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="square">
+             <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="service-heading">Adverts</h4>
+              <p class="text-muted"> Use this site as an inexpensive way to advertize your small eco-business.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="square2">
+                <img src="../bower_components/app/img/vietnam.jpg"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
   <section id="team">
-      <div class="container2 bg-faded">
+      <img src="../bower_components/app/img/tribu.jpg">
+      <!--<div class="container2 bg-faded">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Team</h2>
@@ -157,7 +177,7 @@
                 </li>
               </ul>
             </div>
-      </div>
+      </div>-->
   </section>
   <section id="contact">
     <div class="container-section-contact bg-faded">
@@ -207,14 +227,14 @@
     <div class="row text-center">
       <div class="col-lg-3">
          <div class="section-title">
-              <li>Sponsor</li>
+              <li>Partners</li>
          </div>
          <div class="section-list">
             <ul>
-              <li class="section-item"><a href="">Sponsor1</a></li>
-              <li class="section-item"><a href="">Sponsor2</a></li>
-              <li class="section-item"><a href="">Sponsor3</a></li>
-              <li class="section-item"><a href="">Sponsor4</a></li>
+              <li class="section-item"><a href="">Partner1</a></li>
+              <li class="section-item"><a href="">Partner2</a></li>
+              <li class="section-item"><a href="">Partner3</a></li>
+              <li class="section-item"><a href="">Partner4</a></li>
             </ul>
           </div>
       </div>
@@ -246,9 +266,9 @@
          </div>
           <ul>
             <li class="section-item"><a href="http://www.vegfest.co.uk/">VegfestUk</a></li>
-            <li class="section-item"><a href="">Twitter</a></li>
-            <li class="section-item"><a href="">Tumblr</a></li>
-            <li class="section-item"><a href="">Youtube</a></li>
+            <li class="section-item"><a href="http://www.sustainableeventssummit.com/">SustainableEventsSummit</a></li>
+            <li class="section-item"><a href="http://www.eco-see.eu/news-events.html">Eco-See</a></li>
+            <li class="section-item"><a href="https://www.eventbrite.co.uk/d/united-kingdom--london/sustainability-events/">Eventbrite</a></li>
           </ul>
       </div>
     </div>
@@ -256,10 +276,9 @@
   </section>
   <footer>
       <div class="container" id="foot">
-        <p>Copyright &copy; BGreen 2017</p>
+        <p>Copyright &copy; Okra 2017</p>
       </div>
   </footer>
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
