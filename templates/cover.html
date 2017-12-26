@@ -64,8 +64,8 @@
           <div class="intro-heading">#OKRA. Let's make a change.</div>
         </div>
         <div class="music-player">
-          <audio controls autoplay loop muted id="music">
-              <source src="../bower_components/app/media/AncoraQui.mp3" type="audio/mpeg"/>
+          <audio controls autoplay loop id="music">
+              <source src="../bower_components/app/media/Latika.mp3" type="audio/mpeg"/>
           </audio>
           <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>
           <span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>
@@ -77,9 +77,9 @@
     <div class="container-section-video">
       <img src="../bower_components/app/img/turtle.jpg"/>
       <div class="video-player">
-        <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play video" onclick="showAndPlayVideo()"></span>
+        <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play video" id="playvideo"></span>
+        <span class="glyphicon glyphicon-remove" data-toggle="tooltip" title="Close video" id="closevideo"></span>
         <div class="video-container">
-            <div class="close" data-toggle="tooltip" tittle="Close video"><strong>X</strong></div>
             <video id="media-video">
                 <source src="../bower_components/app/media/MP4_Bunny.mp4" type="video/MP4"/>
             </video>

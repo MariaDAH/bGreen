@@ -658,34 +658,53 @@ audio{
 }
 
 
-
-
-@media screen and (max-width: 700px){
-
-.col-xs-8{
-
-  width: 65%;
-
-}
-
-.container-section{
-  width: 100%;
-  height: 400px;
-}
-
-.section-title>ul{
-    margin-left: 15px;
+#closevideo{
+  display:none;
 }
 
 
-#sect1{
-  height: 1200px;
+
+@media screen and (min-width: 480px) {
+
+    body {
+
+        min-height: 390px;
+    }
+
+
 }
 
-#sect2{
-  height: 1200px;
-  margin-left: 5px;
-}
+@media screen and (max-width: 700px)
+{
+
+    body{
+      min-height: 580px;
+    }
+
+    .col-xs-8{
+
+      width: 65%;
+
+    }
+
+    .container-section{
+      width: 100%;
+      height: 400px;
+    }
+
+    .section-title>ul{
+        margin-left: 15px;
+    }
+
+
+    #sect1{
+      height: 1200px;
+    }
+
+    #sect2{
+      height: 1200px;
+      margin-left: 5px;
+    }
 
 
 }

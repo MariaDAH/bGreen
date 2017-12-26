@@ -121,8 +121,8 @@ $(document).on('change', ':file', function() {
 
 function showAndPlayVideo(){
 
-    //show and play video when clicking icon
-    var video = document.getElementById("media-video");
+    $("#playvideo").hide(100);
+    $("#closevideo").show(100);
 
     video.style.display ='inline';
     if (video.hasAttribute("controls")) {
@@ -131,45 +131,42 @@ function showAndPlayVideo(){
       video.setAttribute("controls","controls");
       video.setAttribute('autoplay',true);
     }
+
 }
 
 
+ function closeVideo() {
 
-var stopVideo = function (element) {
-    var iframe = element.querySelector( 'iframe');
-    var video = element.querySelector( 'video' );
-    if ( iframe !== null ) {
-        var iframeSrc = iframe.src;
-        iframe.src = iframeSrc;
-    }
-    if ( video !== null ) {
-        video.pause();
-    }
+
 };
 
 
-//Stop website music
+$('document').ready(function(){
 
-$("#stopmusic").click(function(){
+    // Hide play button on start
+    $("#playmusic").hide(100);
 
-  $("#stopmusic").toggle('100');
-  var music = document.getElementById("music");
-  music.muted = true;
-  $(this).html('<span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>');
-  $("#playmusic").addClass("makeVisible");
+    //Stop website music
+    $("#stopmusic").click(function(){
+
+      $("#stopmusic").hide(100);
+      var music = document.getElementById("music");
+      music.muted = true;
+      $("#playmusic").show(100);
+    })
+
+    //Start website music
+    $("#playmusic").click(function(){
+
+      $("#playmusic").hide(100);
+      var music = document.getElementById("music");
+      music.muted = false;
+      $("#stopmusic").show(100);
+    })
+
 })
 
 
-//Start website music
-
-$("#playmusic").click(function(){
-
-  $("#playmusic").toggle('100');
-  var music = document.getElementById("music");
-  music.autoplay = true;
-  $(this).html('<span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>');
-  $("#stopmusic").addClass("makeVisible");
-})
 
 
 //Validate credit card number/iban
