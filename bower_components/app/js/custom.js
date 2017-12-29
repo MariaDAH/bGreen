@@ -117,30 +117,6 @@ $(document).on('change', ':file', function() {
       })
 
 
-
-
-function showAndPlayVideo(){
-
-    $("#playvideo").hide(100);
-    $("#closevideo").show(100);
-
-    video.style.display ='inline';
-    if (video.hasAttribute("controls")) {
-        video.removeAttribute("controls");
-    } else {
-      video.setAttribute("controls","controls");
-      video.setAttribute('autoplay',true);
-    }
-
-}
-
-
- function closeVideo() {
-
-
-};
-
-
 $('document').ready(function(){
 
     // Hide play button on start
@@ -163,6 +139,41 @@ $('document').ready(function(){
       music.muted = false;
       $("#stopmusic").show(100);
     })
+
+
+    $("#playvideo").click(function(){
+
+      var video = document.getElementById("media-video");
+
+      $("#playvideo").hide(100);
+      $("#closevideo").show(100);
+
+      video.style.display ='inline';
+
+
+      video.setAttribute("controls","controls");
+      video.setAttribute('autoplay',true);
+
+
+    })
+
+
+    $("#closevideo").click(function(){
+
+        var video = document.getElementById("media-video");
+
+
+        $("#closevideo").hide(100);
+        $("#playvideo").show(100);
+
+
+        video.pause();
+        video.style.display='none';
+
+
+    })
+
+
 
 })
 
