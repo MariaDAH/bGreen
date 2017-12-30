@@ -67,54 +67,6 @@ $(document).on('change', ':file', function() {
 
       });
 
-  $("#login").click(function(){
-       var section = document.getElementById('mySection');
-       if(section != undefined)
-       {
-         section.remove();
-       }
-       $("#searchpnl").hide();
-       $("registerpnl").hide();
-       $("signuppnl").hide();
-       $("#loginpnl").slideToggle('slow');
-      })
-
-      $("#search").click(function(){
-
-        var section = document.getElementById('mySection');
-        if(section != undefined)
-        {
-          section.remove();
-        }
-         $("#loginpnl").hide();
-         $("registerpnl").hide();
-         $("signuppnl").hide();
-         $("#searchpnl").slideToggle('slow');
-      })
-
-      $("#register").click(function(){
-        var section = document.getElementById('mySection');
-        if(section != undefined)
-        {
-          section.remove();
-        }
-         $("#loginpnl").hide();
-         $("searchpnl").hide();
-         $("signuppnl").hide();
-         $("#registerpnl").slideToggle('slow');
-      })
-
-        $("#signup").click(function(){
-        var section = document.getElementById('mySection');
-        if(section != undefined)
-        {
-          section.remove();
-        }
-        $("#loginpnl").hide();
-        $("searchpnl").hide();
-        $("registerpnl").hide();
-        $("#signuppnl").slideToggle('slow');
-      })
 
 
 $('document').ready(function(){
@@ -172,6 +124,67 @@ $('document').ready(function(){
 
 
     })
+
+
+        $("#login").click(function(){
+
+           var section = document.getElementById('mySection');
+           if(section != undefined)
+           {
+             section.remove();
+           }
+           $("#searchpnl").hide();
+           $("registerpnl").hide();
+           $("signuppnl").hide();
+           $("#loginpnl").slideToggle('slow');
+
+          })
+
+        $("#search").click(function(){
+
+
+          var section = document.getElementById('mySection');
+          if(section != undefined)
+          {
+            section.remove();
+          }
+           $("#loginpnl").hide();
+           $("registerpnl").hide();
+           $("signuppnl").hide();
+           $("#searchpnl").slideToggle('slow');
+
+        })
+
+        $("#register").click(function(){
+
+          var section = document.getElementById('mySection');
+          if(section != undefined)
+          {
+            section.remove();
+          }
+           $("#loginpnl").hide();
+           $("searchpnl").hide();
+           $("signuppnl").hide();
+           $("#registerpnl").slideToggle('slow');
+
+        })
+
+        $("#signup").click(function(){
+
+          var section = document.getElementById('mySection');
+          if(section != undefined)
+          {
+            section.remove();
+          }
+          $("#loginpnl").hide();
+          $("searchpnl").hide();
+          $("registerpnl").hide();
+          $("#signuppnl").slideToggle('slow');
+
+        })
+
+
+
 
 
 
