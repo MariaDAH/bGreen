@@ -49,27 +49,42 @@ $(document).on('change', ':file', function() {
 
       });
 
-      $(document).ready(function(){
+/*document).ready(function(){
 
-          $(':file').on('fileselect', function(event, numFiles, label) {
+    $(':file').on('fileselect', function(event, numFiles, label) {
 
-              console.log(numFiles);
-              console.log(label);
-          });
+        console.log(numFiles);
+        console.log(label);
+    });
 
-          $('#selectimg').on('click', function(){
+    $('#selectimg').on('click', function(){
 
-                var img=$('input:file').val();
-                console.log(img);
-                $("#avatar").attr('src',img);
+          var img=$('input:file').val();
+          console.log(img);
+          $("#avatar").attr('src',img);
 
-          });
+    });
 
-      });
+});*/
 
 
 
 $('document').ready(function(){
+
+
+    $(':file').on('fileselect', function(event, numFiles, label) {
+
+        console.log(numFiles);
+        console.log(label);
+    });
+
+    $('#selectimg').on('click', function(){
+
+          var img=$('input:file').val();
+          console.log(img);
+          $("#avatar").attr('src',img);
+
+    });
 
     // Hide play button on start
     $("#playmusic").hide(100);
@@ -183,11 +198,10 @@ $('document').ready(function(){
 
         })
 
-
-
-
-
-
+        $("#jana").click(function(){
+           $this = $(this);
+           window.redirect = $this.href;
+        })
 })
 
 
