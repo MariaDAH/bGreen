@@ -1,4 +1,4 @@
-# BGreen-Project Document
+ # BGreen-Project Document
 
 In this text I'll explain the analisys, desing, implentation and test of BGreenSite.
 
@@ -110,6 +110,7 @@ CONCEPT user:
     name: STRING
     nationality: STRING
     age: INT
+    gender: STRING
    AXIOMS
     age >= 16
 END CONCEPT user
@@ -140,6 +141,11 @@ CONCEPT request:
        Ulcerative colitis, Ulcers, Williams syndrome}
        HAS-PARTS: list_of_meals
 END CONCEPT request
+CONCEPT: activity
+   DESCRIPTION: "Depending job profile, activity is classified"
+   ATTRIBUTES:
+      activity-level: {Lighly active, Moderately active, Active, Very active }
+END CONCEPT activity
 ############################################################################
 CONCEPT: MEAL
 ############################################################################
@@ -180,6 +186,7 @@ CONCEPT nutricionStatus:
      height4age: {normal, stunting, severe stunting}
      weight4height: {normal, wasting, severe wasting}
      index mass: {underweight, normal, overweight}
+     activity:
      AXIOMS:
        12-20% Proteins, 50-55% carbs, 25-30% fat, weight4age status standar, height4age normal, index mass normal  = healthy
        <12-20% Proteins, < 50-55% carbs, < 25-30% fat, weight4age status standar, height4age normal, index mass normal  = medium healthy
