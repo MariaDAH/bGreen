@@ -1,52 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
+    <title>Welcome to Okra</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>BGreen default</title>
-
+    <base href="/">
     <!-- Bootstrap core CSS -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="{{ url_for('static',filename='bower_components/bootstrap/dist/css/bootstrap.min.css' )}}" type="text/css">
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"  type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico">
     <!-- Custom styles for this template -->
-     <link rel="stylesheet" type="text/css" href="../bower_components/app/css/cover.css">
-
-     <!--Icons-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="{{ url_for('static',filename='bower_components/app/css/cover.css' )}}" type="text/css" >
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
   <body>
-
     <header>
-
-      <div container-fluid>
-
+      <div class="container-fluid">
+          <!--Navigation -->
           <nav class="navbar navbar-default navbar-expand-md" role="navigation">
-
             <div class="col-md-6">
-
               <div class="navbar-brand">
-
-                <a href="home.html"><i>Start Okra</i></a>
-
+                <a href="{{ url_for('home') }}"><i>Start Okra</i></a>
               </div>
-
             </div>
-
-
             <div class = "col-md-6">
-
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menubarResponsive">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -54,13 +36,12 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-
                 <div class="navbar-collapse collapse" id="menubarResponsive">
-
                     <ul class="navbar-nav">
-
                       <li class="nav-item">
-                        <a class="nav-link text-lowercase text-capitalize text-expanded" href="#video">Watch</a>
+                        <!--<a class="nav-link text-lowercase text-capitalize text-expanded" href="#video">Watch</a>-->
+                        <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>
+                        <span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link text-lowercase text-capitalize text-expanded" href="#services">Services</a>
@@ -71,110 +52,101 @@
                        <li class="nav-item">
                         <a class="nav-link text-lowercase text-capitalize text-expanded" href="#contact">Contact</a>
                       </li>
-                       <li class="nav-item">
+                      <li class="nav-item">
                         <a class="nav-link text-lowercase text-capitalize text-expanded" href="#info">Information</a>
                       </li>
                     </ul>
-
-                </div> <!--navbar-nav-->
-
-            </div> <!--navbar-collapse-->
-
-
+                </div> <!--navbar-collapse-->
+            </div>
           </nav> <!--navbar-default-->
-
-      </div> <!--container fluid-->
-
-    </div>
-
+      </div><!--container fluid-->
     </header>
-
-    <div class="container-fluid" id="main-frame">
-
-      <section id="intro">
-
-        <div class="container-fluid">
-
-          <div class="intro-text">
-
-                  <div class="intro-lead-in">Your favorite source for a better life.</div>
-                  <div class="intro-heading">#OKRA. Let's make a change.</div>
-
-          </div>
-
-          <div class="music-player">
-
+    <section id="intro">
+      <div class="container-fluid">
+        <div class="intro-text">
+              <div class="intro-lead-in">Your favorite source for a better life.</div>
+              <div class="intro-heading">#OKRA. Let's make a change.</div>
+        </div>
+        <div class="music-player">
               <audio controls autoplay loop id="music">
-                  <source src="../bower_components/app/media/Latika.mp3" type="audio/mpeg"/>
+                  <source src="{{ url_for('static',filename='bower_components/app/media/Latika.mp3' )}}" type="audio/mpeg"/>
               </audio>
-
-              <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>
-              <span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>
-
-          </div>
-
-        </div> <!--container-fluid-->
-
-      </section>
-
-      <section id="video">
-
-        <div class="container-fluid">
-
-        <div class="row">
-
+              <!--<span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play music" id="playmusic"></span>-->
+              <!--<span class="glyphicon glyphicon-pause" data-toggle="tooltip" title="Stop music" id="stopmusic"></span>-->
+        </div>
+      </div><!--container-fluid-->
+    </section> <!--section intro-->
+    <section id="video">
+      <div class="container-fluid">
+        <!--<div class="row">-->
             <div class="container-section-video">
-
-              <img src="../bower_components/app/img/turtle.jpg"/>
-
-
+              <img src="{{ url_for('static', filename='bower_components/app/img/turtle.jpg' )}}"/>
               <div class="video-container">
                     <video id="media-video">
-                        <source src="../bower_components/app/media/FoodInc.mp4" type="video/MP4"/>
+                      <source src="{{ url_for('static',filename='bower_components/app/media/FoodInc.mp4' )}}" type="video/MP4"/>
                     </video>
               </div>
-
-              <div class="video-player">
+              <!--<div class="video-player">
                 <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play video" id="playvideo"></span>
                 <span class="glyphicon glyphicon-remove" data-toggle="tooltip" title="Close video" id="closevideo"></span>
-              </div>
-
-
-
-            </div>
-
-          </div>
-
-        </div><!--container fluid-->
-
-      </section>
-
-      <section id="services">
-
-        <div class="container-fluid">
-
-          <div class="container-section-services bg-faded">
-
-            <div class="row">
-
-                <div class="col-md-4">
-                    <div class="square">
-                      <div class="box text-center">
-                       <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-cutlery fa-stack-1x fa-inverse" id="jana"><a href="https://advancedeating.co.uk/"></a></i>
-                       </span>
-                      <h4 class="service-heading text-center">Health</h4>
-                      <p class="text-muted">It is a way of eating that emphasizes the foods humans have evolved to eat for hundreds of thousands of years, before the agricultural and industrial revolutions.</p>
+              </div>-->
+               <div class="video-player" class="modal fade" role="dialog">
+                 <div class="modal-dialog row">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="row">
+                          <h3 class="modal-title">Play video
+                            <button type="button" class="close" data-dismiss="modal">X</button>
+                          </h3>
                       </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="square">
-                      <img src="../bower_components/app/img/colorsindia.jpg"/>
+                    <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip" title="Play video" id="playvideo"></span>
+                    <span class="glyphicon glyphicon-remove" data-toggle="tooltip" title="Close video" id="closevideo"></span>
+                    <span class="help-block">Click here in case is not displayed</span>
                   </div>
                 </div>
-                <div class="col-md-4">
+              </div>
+            </div>
+          <!--</div>-->
+        </div><!--container fluid-->
+    </section>
+     <section id="services">
+        <div class="container-fluid">
+          <div class="container-section-services bg-faded">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="square">
+                  <div class="box text-center">
+                    <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fa fa-cutlery fa-stack-1x fa-inverse" id="jana"><a href="https://advancedeating.co.uk/"></a></i>
+                    </span>
+                    <h4 class="service-heading text-center">Health</h4>
+                    <p class="text-muted">It is a way of eating that emphasizes the foods humans have evolved to eat for hundreds of thousands of years, before the agricultural and industrial revolutions.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="square">
+                  <div class="flip">
+                    <div class="card">
+                      <div class="face front">
+                        <div class="inner">
+                          <img src="{{ url_for('static',filename='bower_components/app/img/colorsindia.jpg' )}}"/>
+                        </div>
+                      </div>
+                      <div class="face back">
+                        <div class="inner text-center">
+                          <h3>Discover Food Inc</h3>
+                          <button type="button" class="btn btn-default play" data-toggle="modal" data-target="video-player">Know More</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
                   <div class="square">
                     <div class="box text-center">
                       <span class="fa-stack fa-4x">
@@ -185,15 +157,26 @@
                       <p class="text-muted">As nouns the difference between leisure and pleasure is that leisure is freedom provided by the cessation of activities while pleasure is (uncountable) a state of being pleased.</p>
                       </div>
                     </div>
-                </div>
-
-             </div> <!--row-->
-
+              </div>
+            </div>
             <div class="row">
-
                 <div class="col-md-4">
                   <div class="square">
-                      <img src="../bower_components/app/img/indiadesert.jpg"/>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front">
+                          <div class="inner">
+                            <img src="{{ url_for('static', filename='bower_components/app/img/indiadesert.jpg' )}}"/>
+                          </div>
+                        </div>
+                        <div class="face back">
+                          <div class="inner text-center">
+                            <h3>Discover Food Inc</h3>
+                            <button type="button" class="btn btn-default play" data-toggle="modal" data-target="video-player">Know More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -210,50 +193,44 @@
                 </div>
                 <div class="col-md-4">
                   <div class="square">
-                      <img src="../bower_components/app/img/vietnam.jpg"/>
+                    <div class="flip">
+                      <div class="card">
+                        <div class="face front">
+                          <div class="inner">
+                            <img src="{{ url_for('static', filename='bower_components/app/img/vietnam.jpg' )}}"/>
+                          </div>
+                        </div>
+                        <div class="face back">
+                          <div class="inner text-center">
+                            <h3>Discover Food Inc</h3>
+                            <button type="button" class="btn btn-default play" data-toggle="modal" data-target="video-player">Know More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-          </div> <!--row-->
-
+            </div> <!--row-->
+          </div>
         </div>
-
       </section>
-
-      <section id="team">
-
-        <div class="container-fluid">
-
-        <div class="row">
-
-           <div class="container-section-team">
-
-              <img src="../bower_components/app/img/tribu.jpg">
-
-            </div>
-
+    <section id="team">
+      <div class="container-fluid">
+        <div class="container-section-team">
+          <img src="{{ url_for('static', filename='bower_components/app/img/tribu.jpg' )}}" >
         </div>
-
-        </div>
-
-      </section>
-
-      <section id="contact">
-
-       <div class="text-center">
-
+      </div>
+    </section>
+    <section id="contact">
+       <!--<div class="text-center">
         <span>
           <a href="cover.html">
-            <i class="fa fa-angle-double-up text-center" aria-hidden="true"></i>
+           <i class="fa fa-angle-double-up text-center" aria-hidden="true"></i>
           </a>
         </span>
-
-      </div>
-
+        </div>-->
         <div class="container-fluid">
-
           <div class="container-section-contact bg-faded">
-
             <div class="row">
               <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Me</h2>
@@ -293,20 +270,13 @@
                 </form>
               </div>
             </div>
-
-        </div> <!--container-fluid-->
-
-       </div>
-
-      </section>
-
-      <section id="info">
-
+          </div> <!--container-fluid-->
+        </div>
+     </section>
+     <section id="info">
         <div class="container-fluid">
-
-            <div class="container-section-info bg-faded">
-
-              <div class="row">
+          <div class="container-section-info bg-faded">
+            <div class="row">
                 <div class="col-lg-3 text-center">
                    <div class="section-title">
                         <li>Partners</li>
@@ -346,7 +316,7 @@
                     </ul>
                    </div>
                 </div>
-                  <div class="col-lg-3 text-center">
+                <div class="col-lg-3 text-center">
                    <div class="section-title">
                       <li>Events</li>
                    </div>
@@ -359,38 +329,19 @@
                     </ul>
                     </div>
                 </div>
-              </div>
-
             </div>
-
-       </div>  <!--container fluid-->
-
-      </section>
-
-      <footer>
-
-        <div class="container-fluid">
-
-            <p>Copyright &copy; Okra 2017</p>
-
-        </div>
-
-      </footer>
-
-
-
-
-
-
-    </div> <!--container-fluid-->
-
+          </div>
+        </div>  <!--container fluid-->
+     </section>
+     <footer>
+      <div class="container-fluid" align="center">
+          <p>Copyright &copy; Okra 2017</p>
+      </div>
+     </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/app/js/environment.js"></script>
-    <script src="../bower_components/app/js/custom.js"></script>
-
+    <script src="{{ url_for('static',filename='bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='bower_components/bootstrap/dist/js/bootstrap.min.js' )}}"></script>
+    <script src="{{ url_for('static',filename='bower_components/app/js/environment.js' )}}"></script>
+    <script src="{{ url_for('static',filename='bower_components/app/js/custom.js' )}}"></script>
   </body>
-
-
 </html>

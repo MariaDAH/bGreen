@@ -29,7 +29,7 @@ function geocodeAddress(geocoder, resultsMap) {
 
 
 function registerBusiness(){
-     var section = document.getElementById('mySection');
+     var section = document.getElementById('mainSection');
      if(section != undefined)
      {
         section.remove();
@@ -39,7 +39,7 @@ function registerBusiness(){
 }
 
 //Upload picture
-$(document).on('change', ':file', function() {
+$('document').on('change', ':file', function() {
 
         var input = $(this),
         numFiles = input.get(0).files ? input.get(0).files.length : 1,
@@ -48,25 +48,6 @@ $(document).on('change', ':file', function() {
         $('#filetext').attr('value',label);
 
       });
-
-/*document).ready(function(){
-
-    $(':file').on('fileselect', function(event, numFiles, label) {
-
-        console.log(numFiles);
-        console.log(label);
-    });
-
-    $('#selectimg').on('click', function(){
-
-          var img=$('input:file').val();
-          console.log(img);
-          $("#avatar").attr('src',img);
-
-    });
-
-});*/
-
 
 
 $('document').ready(function(){
@@ -121,6 +102,7 @@ $('document').ready(function(){
       video.setAttribute("controls","controls");
       video.setAttribute('autoplay',true);
 
+      $('.video-player').css('display','none');
 
     })
 
@@ -137,71 +119,83 @@ $('document').ready(function(){
         video.pause();
         video.style.display='none';
 
+        $('.video-player').css('display','block');
+
 
     })
 
 
-        $("#login").click(function(){
+    $("#login").click(function(){
 
-           var section = document.getElementById('mySection');
-           if(section != undefined)
-           {
-             section.remove();
-           }
-           $("#searchpnl").hide();
-           $("registerpnl").hide();
-           $("signuppnl").hide();
-           $("#loginpnl").slideToggle('slow');
+       var section = document.getElementById('mainSection');
+       if(section != undefined)
+       {
+         section.remove();
+       }
+       $("#searchpnl").hide();
+       $("#registerpnl").hide();
+       $("#signuppnl").hide();
+       $("#loginpnl").slideToggle('slow');
 
-          })
+      })
 
-        $("#search").click(function(){
+    $("#search").click(function(){
 
 
-          var section = document.getElementById('mySection');
-          if(section != undefined)
-          {
-            section.remove();
-          }
-           $("#loginpnl").hide();
-           $("registerpnl").hide();
-           $("signuppnl").hide();
-           $("#searchpnl").slideToggle('slow');
+      var section = document.getElementById('mainSection');
+      if(section != undefined)
+      {
+        section.remove();
+      }
+       $("#loginpnl").hide();
+       $("#registerpnl").hide();
+       $("#signuppnl").hide();
+       $("#searchpnl").slideToggle('slow');
 
-        })
+    })
 
-        $("#register").click(function(){
+    $("#register").click(function(){
 
-          var section = document.getElementById('mySection');
-          if(section != undefined)
-          {
-            section.remove();
-          }
-           $("#loginpnl").hide();
-           $("searchpnl").hide();
-           $("signuppnl").hide();
-           $("#registerpnl").slideToggle('slow');
+      var section = document.getElementById('mainSection');
+      if(section != undefined)
+      {
+        section.remove();
+      }
+       $("#loginpnl").hide();
+       $("#searchpnl").hide();
+       $("#signuppnl").hide();
+       $("#registerpnl").slideToggle('slow');
 
-        })
+    })
 
-        $("#signup").click(function(){
+    $("#signup").click(function(){
 
-          var section = document.getElementById('mySection');
-          if(section != undefined)
-          {
-            section.remove();
-          }
-          $("#loginpnl").hide();
-          $("searchpnl").hide();
-          $("registerpnl").hide();
-          $("#signuppnl").slideToggle('slow');
+      var section = document.getElementById('mainSection');
+      if(section != undefined)
+      {
+        section.remove();
+      }
+      $("#loginpnl").hide();
+      $("#searchpnl").hide();
+      $("#registerpnl").hide();
+      $("#signuppnl").slideToggle('slow');
 
-        })
+    })
 
-        $("#jana").click(function(){
-           $this = $(this);
-           window.redirect = $this.href;
-        })
+    $("#jana").click(function(){
+       $this = $(this);
+       window.redirect = $this.href;
+    })
+
+    $('.flip').hover(function(){
+        $(this).find('.card').toggleClass('flipped');
+    });
+
+    $('.play').click(function(){
+      $('.video-player').css('display','block');
+    });
+
+
 })
 
 

@@ -20,7 +20,6 @@ header{
   height: 100%;
   width: 100%;
 
-
 }
 
 
@@ -28,8 +27,8 @@ footer{
 
   background-color: #2f8038;
   font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
-  color:#9d9d9d;
-  height: 100px;
+  color: white;
+  height: 100%;
 
 }
 
@@ -41,6 +40,7 @@ footer p{
 
 }
 
+
 section .fa-angle-double-up{
   font-size: 80px;
   top:0px;
@@ -49,7 +49,7 @@ section .fa-angle-double-up{
 
 .video-player .text-center{
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .container-fluid{
@@ -63,8 +63,9 @@ section .fa-angle-double-up{
 /* Navigation menu */
 .navbar-default {
 
-    margin-top: 20px;
-    background-color: transparent;
+    /*margin-top: 20px;*/
+    /*background-color: transparent;*/
+    background-color: #2f8038;
     border: none;
     font-size: 0px;
     display: inline-block;
@@ -146,7 +147,6 @@ section#main-frame{
 
 
 /*Section intro*/
-
 section#intro{
 
   display: inline-block;
@@ -271,6 +271,7 @@ section .video-player{
     text-align: center;
     font-size: 40px;
     color: #2f8038;
+    display: none;
 
 }
 
@@ -336,13 +337,103 @@ section .container-section-services .square{
 
 section .container-section-services .square > img{
 
-    display: inline;
-    position: absolute;
-    height: 100%;
+    position: relative;
+    height: 350px;
     width: 100%;
     margin:0px;
     padding: 0px;
 
+}
+
+/*.card {
+    display: inline-block;
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+}*/
+
+/*.inner {
+  position: relative;
+  display: block;
+} */
+
+/*.card > img{
+
+  position: relative;
+}*/
+
+.flip {
+  -webkit-perspective: 800;
+          perspective: 800;
+        position: absolute;
+        text-align: center;
+        width: 100%;/*new*/
+        height: 100%; /*new*/
+}
+
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+
+
+.flip .card {
+    /*width: 270px;
+    height: 178px;*/
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    /*background-color: #fff;*/
+    background-color: blue;
+
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+    position: absolute;
+    width: 450px;
+    /*width: 270px;*/
+    z-index: 1;
+}
+.flip .card .front img{
+  width: 450px;
+  height: 100%;
+}
+.flip .card .img {
+   position: relative;
+   /*width: 270px;
+   height: 178px;*/
+   height: 350px;
+  width: 450px;
+   z-index: 1;
+   border: 2px solid #000;
+}
+.flip .card .back {
+  /*padding-top: 10%;*/
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+  position: absolute;
+}
+.inner{
+  /*margin:0px !important;
+  width: 270px;
+  position: relative;
+  display: block;*/
+  margin: 0px !important;
+  position: relative;
+  display: block;
+  height: 350px;
+  width: 450px;
+  padding: 0px !important;
+  text-align: center;
 }
 
 section  .container-section-services .col-md-4 {
@@ -405,6 +496,11 @@ section#team{
   padding: 0px;
 
 }
+
+
+
+
+
 
 .fa-4x {
 
@@ -541,3 +637,7 @@ section#info{
 
 
 }
+
+
+
+

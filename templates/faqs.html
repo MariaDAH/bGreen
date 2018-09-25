@@ -1,730 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    <base href="bGreen">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>BGreen default</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-     <link rel="stylesheet" type="text/css" href="../bower_components/app/css/custom.css">
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-
-     <header>
-
-     <div class="container-fluid">
-      <nav class="navbar navbar-default navbar-expand-lg navbar-light py-lg-4" role="navigation">
-
-      <div class="row">
-
-          <div class="col-lg-6 tagline-upper text-left text-expanded text-heading text-shadow mt-5 d-none d-lg-block">
-              <a class="navbar-brand text-expanded font-weight-bold" href="cover.html">Okra</a>
+{% extends "base.html" %}
+{% block content %}
+<section id="mainSection">
+  <div class="container">
+  <article>
+    <div class="row">
+      <div class="col-xs-8 bg-faded" id="sect1">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title text-center">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Why industries are selling nocive products?
+              </a>
+            </h4>
           </div>
-
-        <div class="col-lg-6 mt-5">
-            <ul class="nav nav-pills pull-right">
-                 <li class="">
-                    <span class="glyphicon glyphicon-search" data-toggle="tooltip" title="Search business" id="search"></span>
-                </li>
-                <li class="">
-                    <span class="glyphicon glyphicon-log-in" data-toggle="tooltip" title="Log in" id="login"></span>
-                </li>
-                 <li class="">
-                    <span class="glyphicon glyphicon-user" data-toggle="tooltip" title="Sign up" id="signup"></span>
-                </li>
-                <li class="">
-                    <span class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" title="Register business" id="register"></span>
-                </li>
-            </ul>
-          </div>
-      </div>
-
-      </nav>
-
-      </div>
-
-      <!-- Menu Navigation -->
-      <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarResponsive">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <div class="collapse  navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav col-lg-12">
-                <li class="nav-item active col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="home.html">Home
-                  <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="aboutus.html">About me</a>
-                </li>
-                <li class="nav-item col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="mission.html">Get mission</a>
-                </li>
-                <li class="nav-item col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="projects.html">Projects</a>
-                </li>
-                 <li class="nav-item col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="faqs.html">Faq's</a>
-                </li>
-                 <li class="nav-item col-lg-2">
-                  <a class="nav-link text-lowercase text-capitalize text-expanded" href="news.html">Outspace news</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-
-    </header>
-
-
-    <section id="mySection">
-    <div class="container">
-
-    <article>
-      <div class="row">
-        <div class="col-xs-8 bg-faded" id="sect1">
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <h4 class="panel-title text-center">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Why industries are selling nocive products?
-                </a>
-              </h4>
-            </div>
-          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne"  href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <div class="panel-body">
-               Either for money or there isn't any other economic alternative to produce the necessary amount of food to supply the humanity. In my opinion, there is always another alternative, in fact, twenty million people are on the brick of starvation according UN world food program. I believe we need to end with the hyprocrisy in this world.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title text-center">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  What is the EIA?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                Enviromental Impact Assesment(UK), Energy Information Administration(US).
-                Is an organization that provides information and reports about energy production, stocks, demands, imports and exports.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title text-center">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  What are the endocrine disruptors?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                Endocrine disruptors are chemicals that can interfere with endocrine (or hormone) systems at certain doses. These disruptions can cause cancerous tumors, birth defects, and other developmental disorders. Any system in the body controlled by hormones can be derailed by hormone disruptors.What are some examples of endocrine disruptors?
-                A wide and varied range of substances are thought to cause endocrine disruption.
-                Chemicals that are known endocrine disruptors include diethylstilbestrol (the synthetic estrogen DES), dioxin and dioxin-like compounds, polychlorinated biphenyls (PCBs), DDT, and some other pesticides.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-              <h4 class="panel-title text-center">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  What is the glyphosate and how is getting into our bread?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-              <div class="panel-body">
-                "Glyphosate is the active ingredient in many weedkillers, including Monsanto's Roundup - used in farming, public places like parks, streets and schools and also by people in their gardens. It is the world’s most widely sold weedkiller.
-                Glyphosate is one of three pesticides regularly found in routine testing of British bread, appearing in over 60% of wholemeal bread samples tested by the Defra committee on Pesticide Residues in Food.
-                Many farmers routinely use Roundup and other herbicides to clear their fields of weeds before crops emerge in the spring. But what's more alarming is they’re also using glyphosate on crops shortly before they are harvested, in order to desiccate (dry out) the plants and make them easier to harvest.
-                Glyphosate kills parts of the crop that haven’t ripened evenly, and dries the crop. This allows Combine harvesters to move more quickly and cover more ground during harvest, and may reduce drying costs. But applying glyphosate so close to harvest makes the likelihood of finding residues in food even higher."
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFive">
-              <h4 class="panel-title text-center">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  How are we exposed to hormonal pollutants?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-              <div class="panel-body">
-               The EDC are present in many products we consume daily: water, food, toys, cosmetics, textile fibers...
-               Therefore, we are exposed:
-               . By digestive tract, through food and water with pesticide residues.
-               . By respiratory route, by inhalation of indoor air from homes and contaminants present in the external environment. Also during the performance of works that demand product handling with EDC.
-               . By cutaneous route, for the use of cosmetics, hygiene products, clothing or their substances used in the work that contain endocrine disruptors.
-               . Intravenously, during sanitary practices that involve the use of plastics.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingSix">
-              <h4 class="panel-title text-center">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  How can we remove all this nocive products without a huge impact in the world economy?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-              <div class="panel-body">
-                 Reducing conglomerates, relying more in small business using natural practices.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingSeven">
-              <h4 class="panel-title text-center">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                  Why do we have a mission?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-              <div class="panel-body">
-                 Because of the children and to live a happier life.
-              </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne"  href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <div class="panel-body">
+             Either for money or there isn't any other economic alternative to produce the necessary amount of food to supply the humanity. In my opinion, there is always another alternative, in fact, twenty million people are on the brick of starvation according UN world food program. I believe we need to end with the hyprocrisy in this world.
             </div>
           </div>
         </div>
-         <div class="form-group">
-        <label for="faq" id="faq">Write your question below</label>
-        <textarea class="form-control" rows="5"></textarea>
-        </div>
-        <div class="submitfaq">
-        <button type="submit" class="btn btn-default">Send question</button>
-        </div>
-        </div>
-        <div class="col-xs-4 bg-faded" id="sect2">
-         <div id="test">
-          <div clas="panel panel-default">
-             <div class="panel-heading">
-                <hr class="divider">
-                  <h2 class="text-center">Links of interest</h2>
-                <hr class="divider">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title text-center">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What is the EIA?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              Enviromental Impact Assesment(UK), Energy Information Administration(US).
+              Is an organization that provides information and reports about energy production, stocks, demands, imports and exports.
             </div>
-            <table class="table table-fixed">
-              <tbody>
-              <tr>
-                <td>
-                  <h4>Transparency International.</h4>
-                  <a href="https://www.transparency.org/whatwedo/publication/lobbying_in_europe">Click here to read more about it.</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>Organisation for Economic Co-operation and Development.</h4>
-                  <a href="http://www.oecd.org/">Click here to read more about it.</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>European Food Safety Authority.</h4>
-                  <a href="http://www.efsa.europa.eu/en/topics/topic/chemicals-food">Click here to read more about it.</a>
-                </td>
-              </tr>
-               <tr>
-                <td>
-                <h4>Energy Information Administration</h4>
-                 <a href="https://www.eia.gov/">Click here to read more about it.</a>
-                </td>
-              </tr>
-               <tr>
-                <td>
-                  <h4>EuropaBio</h4>
-                  <a href="https://www.europabio.org/">Click here to read more about it.</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>United Nations</h4>
-                  <a href="http://www.un.org/en/index.html">Click here to read more about it.</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <h4>World food program.</h4>
-                  <a href="http://www1.wfp.org/index.php/">Click here to read more about it.</a>
-                </td>
-              </tr>
-               <tr>
-                <td>
-                  <h4>Enviromental protection agency.</h4>
-                  <a href="https://www.epa.gov/">Click here to read more about it.</a>
-                </td>
-              </tr>
-              </tbody>
-            </table>
           </div>
         </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title text-center">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What are the endocrine disruptors?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              Endocrine disruptors are chemicals that can interfere with endocrine (or hormone) systems at certain doses. These disruptions can cause cancerous tumors, birth defects, and other developmental disorders. Any system in the body controlled by hormones can be derailed by hormone disruptors.What are some examples of endocrine disruptors?
+              A wide and varied range of substances are thought to cause endocrine disruption.
+              Chemicals that are known endocrine disruptors include diethylstilbestrol (the synthetic estrogen DES), dioxin and dioxin-like compounds, polychlorinated biphenyls (PCBs), DDT, and some other pesticides.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title text-center">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What is the glyphosate and how is getting into our bread?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              "Glyphosate is the active ingredient in many weedkillers, including Monsanto's Roundup - used in farming, public places like parks, streets and schools and also by people in their gardens. It is the world’s most widely sold weedkiller.
+              Glyphosate is one of three pesticides regularly found in routine testing of British bread, appearing in over 60% of wholemeal bread samples tested by the Defra committee on Pesticide Residues in Food.
+              Many farmers routinely use Roundup and other herbicides to clear their fields of weeds before crops emerge in the spring. But what's more alarming is they’re also using glyphosate on crops shortly before they are harvested, in order to desiccate (dry out) the plants and make them easier to harvest.
+              Glyphosate kills parts of the crop that haven’t ripened evenly, and dries the crop. This allows Combine harvesters to move more quickly and cover more ground during harvest, and may reduce drying costs. But applying glyphosate so close to harvest makes the likelihood of finding residues in food even higher."
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title text-center">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                How are we exposed to hormonal pollutants?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+             The EDC are present in many products we consume daily: water, food, toys, cosmetics, textile fibers...
+             Therefore, we are exposed:
+             . By digestive tract, through food and water with pesticide residues.
+             . By respiratory route, by inhalation of indoor air from homes and contaminants present in the external environment. Also during the performance of works that demand product handling with EDC.
+             . By cutaneous route, for the use of cosmetics, hygiene products, clothing or their substances used in the work that contain endocrine disruptors.
+             . Intravenously, during sanitary practices that involve the use of plastics.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingSix">
+            <h4 class="panel-title text-center">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                How can we remove all this nocive products without a huge impact in the world economy?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+            <div class="panel-body">
+               Reducing conglomerates, relying more in small business using natural practices.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingSeven">
+            <h4 class="panel-title text-center">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Why do we have a mission?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+            <div class="panel-body">
+               Because of the children and to live a happier life.
+            </div>
+          </div>
         </div>
       </div>
-    </article>
-
-      <article>
-      <div class="bg-faded p-4 my-4">
-        <hr>
-        <div class="box1">
-            <ul class="nav-pills text-expanded" id="brandIcons">
-                <li class="">
-                   <i style="font-size:36px" class="fa">&#xf173;</i>
-                </li>
-                 <li class="">
-                    <i class="fa fa-twitter" style="font-size:36px"></i>
-                </li>
-                <li class="">
-                    <i class="fa fa-facebook" style="font-size:36px"></i>
-                </li>
-                 <li class="">
-                    <i class="fa fa-youtube" style="font-size:36px"></i>
-                </li>
-                <li class="">
-                    <i class="fa fa-rss" style="font-size:36px"></i>
-                </li>
-            </ul>
-          </div>
+       <div class="form-group">
+      <label for="faq" id="faq">Write your question below</label>
+      <textarea class="form-control" rows="5"></textarea>
       </div>
-      </article>
-
-    </div> <!-- /.container -->
-    </section>
-
-
-    <div class="bs-panel container" id="registerpnl">
-    <div class="panel panel-info">
-    <div class="panel-body">
-      <form>
-        <div class="bg-faded p-4 my-4">
-          <hr class="divider">
-          <h2 class="text-center text-lg text-uppercase my-0">Go eco!
-            <strong>Register your business here</strong>
-          </h2>
-          <hr class="divider">
-          <div class="box">
-            <div class="form-group row text-left">
-              <label for="userid" class="col-lg-2 col-form-label">*Username:</label>
-              <div class="col-lg-10">
-                <input type="text" class="form-control" id="userid" placeholder="Enter your username here" autofocus="" required="">
-              </div>
-            </div>
-             <div class="form-group row text-left">
-              <label for="pwd" class="col-lg-2 col-form-label">*Password:</label>
-              <div class="col-lg-10">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter your password here" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-              </div>
-             </div>
-             <div class="form-group row text-left">
-                <label for="linkto" class="col-lg-2 col-form-label">*Site url:</label>
-                <div class="col-lg-10">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon3">https://bGreen.com/</span>
-                    <input type="url" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your business site url here">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row text-left">
-                <label for="address" class="col-lg-2 col-form-label">*Address:</label>
-                <div class="col-lg-10">
-                  <input type="address" class="form-control" id="address" placeholder="Enter your business location here" required="">
-                    <input type="button" id="submit" value="Go map location" on_click=geocodeAddress()>
-                    <div id="map" class="img-fluid">
-                      My map will go here
-                    </div>
-                </div>
-              </div>
-              <div class="form-group row text-left">
-                <label for="telnum" class="col-lg-2 col-form-label">*Telephone number:</label>
-                <div class="col-lg-10">
-                    <select id="countries_phone1" class="col-lg-2 bfh-countries" data-country="US">
-                      <option>US</option>
-                      <option>UK</option>
-                      <option>ES</option>
-                      <option>DE</option>
-                    </select>
-                    <input type="text" class="col-lg-4 bfh-phone" data-country="countries_phone1">
-                </div>
-              </div>
-              <div class="form-group row text-left">
-                <label for="comment" class="col-lg-2 col-form-label">Insert comment:</label>
-                <div class="col-lg-10">
-                  <textarea class="form-control" rows="5" id="comment" placeholder="Enter comment about your business here"></textarea>
-                </div>
-              </div>
-              <div class="form-group row text-left">
-                <label for="amount" class="col-lg-2 col-form-label inline">Donation ammount:</label>
-                <fieldset class="col-lg-10">
-                <div class="form-group row">
-                    <div class="form-check col-lg-4">
-                      <label class="form-check-label radio-inline">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option2">15 GBP
-                      </label>
-                    </div>
-                    <div class="form-check col-lg-4">
-                      <label class="form-check-label radio-inline">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">35 GBP
-                      </label>
-                    </div>
-                    <div class="form-check col-lg-4 disabled">
-                        <label class="form-check-label radio-inline">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                          Option three is disabled
-                        </label>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-            <div class="form-group row text-left">
-                <label for="paymentmeth" class="col-lg-2 col-form-label">Payment method:</label>
-                <div class="col-lg-10">
-                <ul class="list-group row">
-                    <ol class="list-group-item col-lg-3">
-                       <label class="form-check-label radio-inline">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option1">
-                          <span class="glyphicon glyphicon-credit-card"></span>
-                          Visa
-                        </label>
-                    </ol>
-                    <ol class="list-group-item col-lg-3">
-                      <label class="form-check-label radio-inline">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios5" value="option1">
-                        <span class="glyphicon glyphicon-xs glyphicon-credit-card"></span>
-                        Mastercard
-                      </label>
-                    </ol>
-                    <ol class="list-group-item col-lg-3">
-                      <label class="form-check-label radio-inline">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios6" value="option1">
-                        <span class="glyphicon glyphicon-credit-card"></span>
-                        AmericanExpress
-                      </label>
-                    </ol>
-                    <ol class="list-group-item col-lg-3">
-                      <label class="form-check-label radio-inline">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios7" value="option1">
-                        <span class="glyphicon glyphicon-credit-card"></span>
-                        Paypal
-                      </label>
-                    </ol>
-                </ul>
-              </div>
-            </div>
-             <div class="form-group row text-left">
-              <label for="accholder" class="col-lg-2 col-form-label">*Account holder:</label>
-              <div class="col-lg-10">
-                <input type="text" class="form-control" id="accholder" required="" placeholder="Enter name on credit card">
-              </div>
-            </div>
-             <div class="form-group row text-left" form-inline>
-              <label for="accnum" class="col-lg-2 col-form-label">*Account Number:</label>
-              <div class="col-lg-2">
-                <input type="number" class="form-control" id="accnumber1">
-              </div>
-              <div class="col-lg-2">
-                <input type="number" class="form-control" id="accnumber2">
-              </div>
-              <div class="col-lg-2">
-                <input type="number" class="form-control" id="accnumber3">
-              </div>
-              <div class="col-lg-2">
-                <input type="number" class="form-control" id="accnumber4">
-              </div>
-            </div>
-             <div class="form-group row text-left">
-              <label for="expdate" class="col-lg-2 col-form-label">*Expiration date:</label>
-              <div class="col-lg-10">
-                <input type="date" class="form-control" id="expdate" required="">
-              </div>
-             </div>
-            <div class="form-group row">
-              <div class="form-check col-lg-5">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" required="">
-                    I accept terms and condtions
-                </label>
-              </div>
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-default btn-lg">Register your business</button>
-                </div>
-            </div>
-             <div class="form-group row text-left">
-                  <span class="help-block">*Field required</span>
-            </div>
-            </div> <!--box-->
-          </div> <!--faded-->
-        </form>
-    </div>
-    </div>
-    </div>
-
-
-    <div class="bs-panel container" id="signuppnl">
-    <div class="panel panel-info">
-    <div class="panel-body">
-      <div class="bg-faded p-4 my-4">
-        <hr class="divider">
-        <h2 class="text-center text-lg text-uppercase my-0">Go eco!
-          <strong>Sign up here</strong>
-        </h2>
-        <hr class="divider">
-        <form>
-        <div class="box">
-          <div class="form-group row">
-            <label for="firstname" class="col-lg-2 col-form-label">First name:</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="firstname" placeholder="Enter you first name here." autofocus="">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="lastname" class="col-lg-2 col-form-label">Last name:</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="lastname" placeholder="Enter your last name here.">
-            </div>
-          </div>
-           <div class="form-group row">
-            <label for="email" class="col-lg-2 col-form-label" >*Email:</label>
-            <div class="col-lg-10">
-              <input type="email" class="form-control" id="email" placeholder="Enter your email here." required="">
-            </div>
-          </div>
-           <div class="form-group row">
-            <label for="confirmemail" class="col-lg-2 col-form-label">*Confirm email:</label>
-            <div class="col-lg-10">
-              <input type="email" class="form-control" id="confirmemail" placeholder="Confirm your email here." required="">
-            </div>
-          </div>
-           <div class="form-group row">
-            <label for="username" class="col-lg-2 col-form-label">*Username:</label>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" id="username" required="" placeholder="Enter your username here.">
-            </div>
-          </div>
-           <div class="form-group row">
-            <label for="passwd" class="col-lg-2 col-form-label">*Password:</label>
-            <div class="col-lg-10">
-              <input type="password" class="form-control" id="passwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password here." required="" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-            </div>
-          </div>
-          <div class="form-group row text-left">
-            <label for="avatar" class="col-lg-2 col-form-label">Insert avatar:</label>
-            <div class="col-lg-4">
-              <div class="embed-responsive embed-responsive-4by3">
-                <iframe class="form-control embed-responsive-item" id="avatar"></iframe>
-              </div>
-            </div>
-             <ul class="btn-group">
-                    <ol>
-                      <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#selectpic">
-                      <span class="glyphicon glyphicon-picture"></span>
-                      </button>
-                    </ol>
-                    <ol>
-                       <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#takepic">
-                        <span class="glyphicon glyphicon-camera"></span>
-                      </button>
-                    </ol>
-              </ul>
-          </div>
-          <!-- Modal -->
-          <div id="selectpic" class="modal fade" role="dialog">
-            <div class="modal-dialog row">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <div class="row">
-                      <h3 class="modal-title">Select picture
-                        <button type="button" class="close" data-dismiss="modal">X</button>
-                      </h3>
-                  </div>
-                </div>
-                <div class="modal-body btn-group">
-                  <label for="filename" class="btn btn-default btn-file">Browse...
-                      <input type="file" for="filetext" accept=".jpg, .jpeg, .png" id="filename" name="filename">
-                  </label>
-                  <input type="text" id="filetext">
-                </div>
-                <span class="help-block">Please select one file</span>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" id="selectimg">Save changes</button>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="form-group row">
-              <div class="form-check col-lg-5">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" required="">
-                    I accept terms and condtions
-                </label>
-              </div>
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-default btn-lg">Sign up now</button>
-                </div>
-            </div>
-            <div class="form-group row text-left">
-                  <span class="help-block">* Field required</span>
-            </div>
-        </div>  <!--box-->
+      <div class="submitfaq">
+      <button type="submit" class="btn btn-default">Send question</button>
       </div>
-      </form>
+      </div>
+      <div class="col-xs-4 bg-faded" id="sect2">
+       <div id="test">
+        <div clas="panel panel-default">
+           <div class="panel-heading">
+              <hr class="divider">
+                <h2 class="text-center">Links of interest</h2>
+              <hr class="divider">
+          </div>
+          <table class="table table-fixed">
+            <tbody>
+            <tr>
+              <td>
+                <h4>Transparency International.</h4>
+                <a href="https://www.transparency.org/whatwedo/publication/lobbying_in_europe">Click here to read more about it.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Organisation for Economic Co-operation and Development.</h4>
+                <a href="http://www.oecd.org/">Click here to read more about it.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>European Food Safety Authority.</h4>
+                <a href="http://www.efsa.europa.eu/en/topics/topic/chemicals-food">Click here to read more about it.</a>
+              </td>
+            </tr>
+             <tr>
+              <td>
+              <h4>Energy Information Administration</h4>
+               <a href="https://www.eia.gov/">Click here to read more about it.</a>
+              </td>
+            </tr>
+             <tr>
+              <td>
+                <h4>EuropaBio</h4>
+                <a href="https://www.europabio.org/">Click here to read more about it.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>United Nations</h4>
+                <a href="http://www.un.org/en/index.html">Click here to read more about it.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>World food program.</h4>
+                <a href="http://www1.wfp.org/index.php/">Click here to read more about it.</a>
+              </td>
+            </tr>
+             <tr>
+              <td>
+                <h4>Enviromental protection agency.</h4>
+                <a href="https://www.epa.gov/">Click here to read more about it.</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       </div>
     </div>
-
-
-    <!--Show panel with javascript on click -->
-      <div class="bs-panel container" id="loginpnl">
-      <div class="panel panel-info">
-          <div class="panel-body">
-          <hr class="divider">
-          <h2 class="text-center text-lg text-uppercase my-0">Go eco!
-          <strong>Log in here</strong>
-        </h2>
-        <hr class="divider">
-            <form>
-              <div class="bg-faded p-4 my-4">
-                <div class="boxpanel">
-                  <div class="form-group row text-left">
-                    <label for="usrid" class="col-lg-4 col-form-label" align="right">Username</label>
-                    <div class="col-lg-6">
-                      <input type="text" class="form-control" id="usrid" placeholder="Enter your business id here" autofocus="">
-                    </div>
-                  </div>
-                   <div class="form-group row text-left">
-                      <label for="password" class="col-lg-4 col-form-label" align="right">Password</label>
-                      <div class="col-lg-6">
-                           <input type="text" class="form-control" id="password" placeholder="Enter your business id here" autofocus="">
-                      </div>
-                   </div>
-                  <div class="form-group">
-                    <div class="form-check text-center">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Remember me
-                      </label>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                     <a class="nav-link text-lowercase text-capitalize text-expanded" href="home.html">Forgot your login?
-                    </a>
-                     <a class="nav-link text-lowercase text-capitalize text-expanded" href="home.html">Forgot your password?
-                    </a>
-                  </div>
-                   <div class="text-center">
-                      <button type="button" class="btn" id="selectbtn">Log in</button>
-                      <button type="button" class="btn" id= "closebtn" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-               </div>
-            </form>
-          </div>
-       </div>
-    </div>
-
-    <div class="bs-panel container" id="searchpnl">
-      <div class="panel panel-info">
-          <div class="panel-body">
-            <hr class="divider">
-            <h2 class="text-center text-lg text-uppercase my-0">Go eco!
-              <strong>Search business location here</strong>
-            </h2>
-        <hr class="divider">
-            <form>
-              <div class="bg-faded p-4 my-4">
-                <div class="boxpanel">
-                  <div class="form-group row text-left">
-                    <label for="businessId" class="col-lg-4 col-form-label" align="right">Search by business identifier</label>
-                    <div class="col-lg-6">
-                      <input type="text" class="form-control" id="businessId" placeholder="Enter your business id here" autofocus="">
-                    </div>
-                  </div>
-                   <div class="form-group row text-left">
-                      <label for="categoryId" class="col-lg-4 col-form-label" align="right">Search by category</label>
-                      <div class="col-lg-6">
-                           <select id="categoryId" class="col-lg-12">
-                             <option>Food</option>
-                             <option>Beverages</option>
-                             <option>Fabrics</option>
-                           </select>
-                      </div>
-                      <!--<div class="dropdown col-lg-6">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Category
-                          <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                          <li><a href="#">Food</a></li>
-                          <li><a href="#">Beverages</a></li>
-                          <li><a href="#">Fabrics</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                        </ul>
-                      </div>-->
-                   </div>
-                    <div class="form-group row text-left">
-                      <label for="location" class="col-lg-4 col-form-label" align="right">Search by location</label>
-                      <div class="col-lg-6">
-                        <input type="text" class="form-control" id="location" placeholder="Enter your location/postcode here" autofocus="">
-                      </div>
-                    </div>
-                      <div class="form-group row text-left">
-                      <label for="businessName" class="col-lg-4 col-form-label" align="right">Search by business name</label>
-                      <div class="col-lg-6">
-                      <input type="text" class="form-control" id="businessName" placeholder="Enter the business name here" autofocus="">
-                      </div>
-                    </div>
-                     <div class="text-center">
-                        <button type="button" class="btn" id="selectbtn1">Save changes</button>
-                        <button type="button" class="btn" id= "closebtn1" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-               </div>
-            </form>
-          </div>
-       </div>
-    </div>
-
-
-    <footer class="text-center py-5">
-      <div class="container">
-        <p class="m-0">Copyright &copy; Okra 2017</p>
+  </article>
+  <article>
+  <div class="bg-faded p-4 my-4">
+    <hr>
+    <div class="box1">
+        <ul class="nav-pills text-expanded" id="brandIcons">
+            <li class="">
+               <i style="font-size:36px" class="fa">&#xf173;</i>
+            </li>
+             <li class="">
+                <i class="fa fa-twitter" style="font-size:36px"></i>
+            </li>
+            <li class="">
+                <i class="fa fa-facebook" style="font-size:36px"></i>
+            </li>
+             <li class="">
+                <i class="fa fa-youtube" style="font-size:36px"></i>
+            </li>
+            <li class="">
+                <i class="fa fa-rss" style="font-size:36px"></i>
+            </li>
+        </ul>
       </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/app/js/custom.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8ExRo7nXIRQPJYy34KyKSfAOCiS-eyc&callback=initMap">
-    </script>
-
-  </body>
-
-</html>
+  </div>
+  </article>
+  </div> <!-- /.container -->
+</section>
+{% endblock %}
