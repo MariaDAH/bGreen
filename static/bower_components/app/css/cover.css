@@ -303,6 +303,29 @@ section.close{
 }
 
 
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+
 
 section#services{
 
@@ -650,6 +673,22 @@ body.cookiewarning .removecookie {
 #policy > div.container {
   background-color : rgb(238, 238, 238);
   border-radius: 10px;
+}
+
+#jana{
+  display: inline-block;
+  transition: .3s;
+  font-weight:bold;
+  text-decoration:none;
+  color: green;
+}
+
+#jana:hover
+{
+   transition: color .12s;
+   color: black;
+   -webkit-transform: scale(2.5);
+   transform: scale(2.5);
 }
 
 

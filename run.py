@@ -15,6 +15,14 @@ def cover():
 def home():
   return render_template("home.html", page_title="Home")
 
+@app.route('/default')
+def default():
+  return render_template("default.html", page_title="Default")
+
+@app.route('/policies')
+def policies():
+  return render_template("policies.html", page_title="Policy")
+
 @app.route('/aboutus')
 def abotus():
   return render_template("aboutus.html", page_title="About")
